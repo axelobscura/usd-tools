@@ -26,6 +26,10 @@
     display: none;
 }
 
+.MenuLateral li h3:hover ul {
+    display: block;
+}
+
 .MenuLateral li ul li a {
     font-size: 0.9rem;
     color: #333;
