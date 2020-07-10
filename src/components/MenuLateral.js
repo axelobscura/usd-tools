@@ -10,6 +10,12 @@ function MenuLateral() {
                 <li><h3>SECCIÓN I</h3>
                     <ul>
                         <li><Link><b>Reporte 1</b><br />Validación de Estructura  del Reporte</Link></li>
+                        <li><Link><b>Reporte 1</b><br />Validación de Estructura  del Reporte</Link></li>
+                        <li><Link><b>Reporte 1</b><br />Validación de Estructura  del Reporte</Link></li>
+                        <li><Link><b>Reporte 1</b><br />Validación de Estructura  del Reporte</Link></li>
+                        <li><Link><b>Reporte 1</b><br />Validación de Estructura  del Reporte</Link></li>
+                        <li><Link><b>Reporte 1</b><br />Validación de Estructura  del Reporte</Link></li>
+                        <li><Link><b>Reporte 1</b><br />Validación de Estructura  del Reporte</Link></li>
                     </ul>
                 </li>
                 <li></li>
