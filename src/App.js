@@ -24,7 +24,7 @@ function App() {
               <MenuLateral />
             </Router>
           </Col>
-          <Col xs={10} md={10} className="p-0 m-0">
+          <Col xs={10} md={10} className="p-2 m-0">
             xs=12 md=8
           </Col>
         </Row>
