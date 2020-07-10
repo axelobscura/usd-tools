@@ -17,7 +17,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename={`${process.env.PUBLIC_URL}/`}>
         <Header />
         <Container fluid={true} className="p-0 m-0">
           <Row className="p-0 m-0">
