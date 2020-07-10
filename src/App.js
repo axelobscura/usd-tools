@@ -11,24 +11,29 @@ import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import MenuLateral from './components/MenuLateral';
+import Seccion1Reporte1 from './components/dashboards/Seccion1Reporte1';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Header />
-      <Container fluid={true} className="p-0 m-0">
-        <Row className="p-0 m-0">
-          <Col xs={2} md={2} className="menulateral p-0 m-0">
-            <Router>
+      <Router>
+        <Header />
+        <Container fluid={true} className="p-0 m-0">
+          <Row className="p-0 m-0">
+            <Col xs={2} md={2} className="menulateral p-0 m-0">
               <MenuLateral />
-            </Router>
-          </Col>
-          <Col xs={10} md={10} className="p-2 m-0">
-            xs=12 md=8
-          </Col>
-        </Row>
-      </Container>
+            </Col>
+            <Col xs={10} md={10} className="p-4 m-0">
+              <Switch>
+                <Route exact path="/">
+                  <Seccion1Reporte1 />
+                </Route>
+              </Switch>
+            </Col>
+          </Row>
+        </Container>
+      </Router>
     </>
   );
 }
