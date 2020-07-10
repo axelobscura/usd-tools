@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
+import Dona from './Graficas/Dona';
 
 function Seccion1Reporte1() {
     return (
@@ -24,7 +25,11 @@ function Seccion1Reporte1() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>1 of 2</Col>
+                    <Col>
+                        <h4>Número de Errores de Estructura por etiqueta en reporte</h4>
+                        <hr />
+                        <Dona />
+                    </Col>
                     <Col>2 of 2</Col>
                 </Row>
             </Container>
