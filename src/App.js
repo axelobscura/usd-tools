@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import MenuLateral from './components/MenuLateral';
 import Seccion1Reporte1 from './components/dashboards/Seccion1Reporte1';
+import Seccion1Reporte2 from './components/dashboards/Seccion1Reporte2';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Col xs={10} md={10} className="p-4 m-0">
               <Switch>
                 <Route exact path="/" component={Seccion1Reporte1} />
+                <Route exact path="/seccion-uno-reporte-dos" component={Seccion1Reporte2} />
               </Switch>
             </Col>
           </Row>
