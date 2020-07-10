@@ -9,7 +9,7 @@ function Tabla() {
         <>
             <Container>
                 <Row>
-                    <Col style={{ maxHeight: '150px', overflow: 'auto' }}>
+                    <Col style={{ maxHeight: '250px', overflow: 'auto' }}>
                         <Table striped bordered hover>
                             <thead>
                                 <tr>
