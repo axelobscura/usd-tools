@@ -5,6 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
 import Dona from './Graficas/Dona';
+import Linear from './Graficas/Linear';
+import Tabla from './Graficas/Tabla';
 
 function Seccion1Reporte1() {
     return (
@@ -26,11 +28,23 @@ function Seccion1Reporte1() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4>Número de Errores de Estructura por etiqueta en reporte</h4>
+                        <h4><span class="lnr lnr-chevron-right"></span> Número de Errores de Estructura por etiqueta en reporte</h4>
                         <hr />
                         <Dona />
                     </Col>
-                    <Col>2 of 2</Col>
+                    <Col>
+                        <h4><span class="lnr lnr-chevron-right"></span> Tendencia de errores de estructura por etiqueta</h4>
+                        <hr />
+                        <Linear />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <hr />
+                        <h4><span class="lnr lnr-chevron-right"></span> Errores de estructura por etiqueta en reporte</h4>
+                        <hr />
+                        <Tabla />
+                    </Col>
                 </Row>
             </Container>
         </>

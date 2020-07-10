@@ -9,7 +9,7 @@ function Titulo(props) {
             <Container>
                 <Row>
                     <Col>
-                        <h1>{props.texto}</h1>
+                        <h1><span class="lnr lnr-arrow-right"></span> {props.texto}</h1>
                         <hr />
                     </Col>
                 </Row>
