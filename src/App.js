@@ -26,9 +26,7 @@ function App() {
             </Col>
             <Col xs={10} md={10} className="p-4 m-0">
               <Switch>
-                <Route exact path="/">
-                  <Seccion1Reporte1 />
-                </Route>
+                <Route exact path="/" component={Seccion1Reporte1} />
               </Switch>
             </Col>
           </Row>
