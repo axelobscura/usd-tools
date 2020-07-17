@@ -13,7 +13,7 @@ function MenuLateral() {
                         <li><Link to="/"><b>Reporte 1</b><br />Validación de Estructura del Reporte</Link></li>
                         <li><Link to="/seccion-uno-reporte-dos"><b>Reporte 2</b><br />Validación de Etiquetas</Link></li>
                         <li><Link to="/seccion-uno-reporte-tres"><b>Reporte 3</b><br />Errores en CURP / RFC</Link></li>
-                        <li><Link><b>Reporte 4</b><br />Etiquetas relacionadas y reglas especiales</Link></li>
+                        <li><Link to="/seccion-uno-reporte-cuatro"><b>Reporte 4</b><br />Etiquetas relacionadas y reglas especiales</Link></li>
                         <li><Link><b>Reporte 5</b><br />Visualizador de etiquetas y registros</Link></li>
                     </ul>
                 </li>

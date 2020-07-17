@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
-import Dona from './Graficas/Dona';
 import Pay from './Graficas/Pay';
 import Barras from './Graficas/Barras';
 import Tabla from './Graficas/Tabla';
@@ -47,13 +46,13 @@ function Seccion1Reporte3() {
                 <Row>
                     <Col>
                         <hr />
-                        <h4><span class="lnr lnr-chevron-right"></span> Tipos de errores encontrados por cada etiqueta</h4>
+                        <h4><span class="lnr lnr-chevron-right"></span> Personas físicas con CURP inválidos/Personas morales con RFC inválido</h4>
                         <hr />
-                        <Barras />
+                        <Tabla />
                     </Col>
                     <Col>
                         <hr />
-                        <h4><span class="lnr lnr-chevron-right"></span> Campos erroneos por reporte</h4>
+                        <h4><span class="lnr lnr-chevron-right"></span> Tabla con errores<br />relacionados por registro</h4>
                         <hr />
                         <Tabla />
                     </Col>

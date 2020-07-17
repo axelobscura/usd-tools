@@ -14,6 +14,7 @@ import MenuLateral from './components/MenuLateral';
 import Seccion1Reporte1 from './components/dashboards/Seccion1Reporte1';
 import Seccion1Reporte2 from './components/dashboards/Seccion1Reporte2';
 import Seccion1Reporte3 from './components/dashboards/Seccion1Reporte3';
+import Seccion1Reporte4 from './components/dashboards/Seccion1Reporte4';
 import './App.css';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                 <Route exact path="/" component={Seccion1Reporte1} />
                 <Route exact path="/seccion-uno-reporte-dos" component={Seccion1Reporte2} />
                 <Route exact path="/seccion-uno-reporte-tres" component={Seccion1Reporte3} />
+                <Route exact path="/seccion-uno-reporte-cuatro" component={Seccion1Reporte4} />
               </Switch>
             </Col>
           </Row>
