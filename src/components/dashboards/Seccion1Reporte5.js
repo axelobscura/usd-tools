@@ -25,7 +25,6 @@ function Seccion1Reporte5() {
                         <hr />
                         <Am />
                     </Col>
-
                 </Row>
                 <Row className="mt-3">
                     <Col>
