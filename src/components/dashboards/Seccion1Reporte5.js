@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
-import Tabla from './Graficas/Tabla';
 
 import Am from './Graficas/Am';
 import PolarArea from './Graficas/PolarArea';
