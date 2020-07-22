@@ -22,7 +22,7 @@ function MenuLateral() {
                     <ul>
                         <li><Link to="/seccion-dos-reporte-uno"><b>Reporte 6</b><br />Flujos de transferencias internacionales de fondos enviados fuera de México</Link></li>
                         <li><Link to="/seccion-dos-reporte-dos"><b>Reporte 7</b><br />Flujos de transferencias internacionales de fondos enviados a México</Link></li>
-                        <li><Link to="/seccion-dos-reporte-uno"><b>Reporte 8</b><br />Transferencias internacionales de fondos de personas físicas mayores de 80 años menores de edad y personas morales con menos de tres años de constitución</Link></li>
+                        <li><Link to="/seccion-dos-reporte-tres"><b>Reporte 8</b><br />Transferencias internacionales de fondos de personas físicas mayores de 80 años menores de edad y personas morales con menos de tres años de constitución</Link></li>
                         <li><Link to="/seccion-dos-reporte-uno"><b>Reporte 9</b><br />Análisis de registros de envío en reporte de Transferencias Internacionales de Fondos (TIF) por ordenante y destinatario</Link></li>
                     </ul>
                 </li>
