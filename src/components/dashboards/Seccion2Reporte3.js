@@ -26,12 +26,16 @@ function Seccion2Reporte3() {
                 </Row>
                 <Row className="mt-5">
                     <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Registros con operaciones de envío/recepción en reportes de personas físicas mayores de 80 años y menores de edad</h4>
+                        <h4>
+                            <span className="lnr lnr-chevron-right"></span> Registros con operaciones de envío/recepción en reportes de personas físicas mayores de 80 años y menores de edad
+                        </h4>
                         <hr />
                         <Tabla />
                     </Col>
                     <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Registros con operaciones de envío/recepción en reportes de personas físicas mayores de 80 años y menores de edad</h4>
+                        <h4>
+                            <span className="lnr lnr-chevron-right"></span> Registros con operaciones de envío/recepción en reportes de personas físicas mayores de 80 años y menores de edad
+                        </h4>
                         <hr />
                         <Tabla />
                     </Col>
