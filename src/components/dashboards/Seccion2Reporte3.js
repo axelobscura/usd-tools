@@ -10,7 +10,7 @@ import Tabla from './Graficas/Tabla';
 function Seccion2Reporte3() {
     return (
         <>
-            <Titulo texto="Reporte 8: ransferencias Internacionales de Fondos de Personas Físicas mayores de 80 años, menores de edad y Personas morales con menos de 3 años de constitución" />
+            <Titulo texto="Reporte 8: Transferencias Internacionales de Fondos de Personas Físicas mayores de 80 años, menores de edad y Personas morales con menos de 3 años de constitución" />
             <Container>
                 <Row>
                     <Col>
