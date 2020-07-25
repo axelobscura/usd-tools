@@ -7,6 +7,7 @@ function MenuLateral() {
     return (
         <>
             <ul className="MenuLateral">
+                <h5 className="p-3 m-0" style={{background: '#333',color: '#fff'}}>TIF</h5>
                 <li>
                     <h3>SECCIÓN I</h3>
                     <ul>
@@ -36,7 +37,16 @@ function MenuLateral() {
                         <li><Link to="/seccion-tres-reporte-cinco"><b>Reporte 14</b><br />Análisis de registros en Reporte de Transferencias Internacionales de Fondos (TIF)  enviadas de acuerdo a Geografía "destino"</Link></li>
                     </ul>
                 </li>
-                <li></li>
+                <h5 className="p-3 m-0" style={{background: '#333',color: '#fff'}}>RELEVANTES</h5>
+                <li>
+                    <h3>SECCIÓN I</h3>
+                    <ul>
+                        <li><Link to="/seccion-tres-reporte-uno"><b>Reporte 1</b><br />Visualizador de Campos y Registros</Link></li>
+                        <li><Link to="/seccion-tres-reporte-dos"><b>Reporte 2</b><br />Validación de Columnas</Link></li>
+                        <li><Link to="/seccion-tres-reporte-tres"><b>Reporte 3</b><br />Errores en Curp/RFC</Link></li>
+                        <li><Link to="/seccion-tres-reporte-cuatro"><b>Reporte 4</b><br />Análisis de registros en reporte de Transferencias Internacionales de Fondos (TIF) de acuerdo a Montos</Link></li>
+                    </ul>
+                </li>
                 <li></li>
                 <li></li>
             </ul>

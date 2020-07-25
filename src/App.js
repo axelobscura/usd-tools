@@ -34,10 +34,10 @@ function App() {
         <Header />
         <Container fluid={true} className="p-0 m-0">
           <Row className="p-0 m-0">
-            <Col xs={2} md={2} className="menulateral p-0 m-0">
+            <Col xs={1} md={1} className="menulateral p-0 m-0">
               <MenuLateral />
             </Col>
-            <Col xs={10} md={10} className="p-4 m-0">
+            <Col xs={11} md={11} className="p-4 m-0">
               <Switch>
                 <Route exact path="/" component={Seccion1Reporte1} />
                 <Route exact path="/seccion-uno-reporte-dos" component={Seccion1Reporte2} />

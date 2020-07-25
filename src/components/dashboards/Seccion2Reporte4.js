@@ -14,7 +14,7 @@ function Seccion2Reporte4() {
     return (
         <>
             <Titulo texto="Reporte 9: Análisis de registros de envío en reporte de Transferencias Internacionales de Fondos (TIF) por ordenante y destinatario" />
-            <Container>
+            <Container fluid={true}>
                 <Row>
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Ordenantes y destinatarios reportados más de una vez</h4>

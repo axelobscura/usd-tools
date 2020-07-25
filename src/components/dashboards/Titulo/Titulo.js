@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 function Titulo(props) {
     return (
         <>
-            <Container>
+            <Container fluid={true}>
                 <Row>
                     <Col>
                         <h1>{props.texto}</h1>

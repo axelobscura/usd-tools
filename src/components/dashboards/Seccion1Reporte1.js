@@ -12,7 +12,7 @@ function Seccion1Reporte1() {
     return (
         <>
             <Titulo texto="Reporte 1: Validación de Estructura del Reporte" />
-            <Container>
+            <Container fluid={true}>
                 <Row>
                     <Col>
                         <Form.Group style={{ width: '100%' }}>
