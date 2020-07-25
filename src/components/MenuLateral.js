@@ -29,11 +29,11 @@ function MenuLateral() {
                 <li>
                     <h3>SECCIÓN III</h3>
                     <ul>
-                        <li><Link><b>Reporte 10</b><br />Visualización en red de Reporte de Transferencias Internacionales de Fondos (TIF)</Link></li>
-                        <li><Link><b>Reporte 11</b><br />Análisis de Registros y atributos de Personas Físicas en Reporte de Transferencias Internacionales (TIF)</Link></li>
-                        <li><Link><b>Reporte 12</b><br />Análisis de Registros y Atributos de Personas Morales en Reporte de Transferencias Internacionales (TIF)</Link></li>
-                        <li><Link><b>Reporte 13</b><br />Análisis de registros en reporte de Transferencias Internacionales de Fondos (TIF) de acuerdo a Montos</Link></li>
-                        <li><Link><b>Reporte 14</b><br />Análisis de registros en Reporte de Transferencias Internacionales de Fondos (TIF)  enviadas de acuerdo a Geografía "destino"</Link></li>
+                        <li><Link to="/seccion-tres-reporte-uno"><b>Reporte 10</b><br />Visualización en red de Reporte de Transferencias Internacionales de Fondos (TIF)</Link></li>
+                        <li><Link to="/seccion-tres-reporte-dos"><b>Reporte 11</b><br />Análisis de Registros y atributos de Personas Físicas en Reporte de Transferencias Internacionales (TIF)</Link></li>
+                        <li><Link to="/seccion-tres-reporte-tres"><b>Reporte 12</b><br />Análisis de Registros y Atributos de Personas Morales en Reporte de Transferencias Internacionales (TIF)</Link></li>
+                        <li><Link to="/seccion-tres-reporte-cuatro"><b>Reporte 13</b><br />Análisis de registros en reporte de Transferencias Internacionales de Fondos (TIF) de acuerdo a Montos</Link></li>
+                        <li><Link to="/seccion-tres-reporte-cinco"><b>Reporte 14</b><br />Análisis de registros en Reporte de Transferencias Internacionales de Fondos (TIF)  enviadas de acuerdo a Geografía "destino"</Link></li>
                     </ul>
                 </li>
                 <li></li>
