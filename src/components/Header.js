@@ -8,11 +8,9 @@ function Header() {
     return (
         <>
             <Navbar bg="light" variant="light">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
                     <img src={logo} alt="" title="" />
                 </Navbar.Brand>
-
-
             </Navbar>
         </>
     );

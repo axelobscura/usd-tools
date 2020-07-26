@@ -41,7 +41,7 @@ function MenuLateral() {
                 <li>
                     <h3>SECCIÓN I</h3>
                     <ul>
-                        <li><Link to="/seccion-tres-reporte-uno"><b>Reporte 1</b><br />Visualizador de Campos y Registros</Link></li>
+                        <li><Link to="/relevantes-seccion-uno-reporte-uno"><b>Reporte 1</b><br />Visualizador de Campos y Registros</Link></li>
                         <li><Link to="/seccion-tres-reporte-dos"><b>Reporte 2</b><br />Validación de Columnas</Link></li>
                         <li><Link to="/seccion-tres-reporte-tres"><b>Reporte 3</b><br />Errores en Curp/RFC</Link></li>
                         <li><Link to="/seccion-tres-reporte-cuatro"><b>Reporte 4</b><br />Análisis de registros en reporte de Transferencias Internacionales de Fondos (TIF) de acuerdo a Montos</Link></li>
