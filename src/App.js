@@ -27,6 +27,7 @@ import Seccion3Reporte4 from './components/dashboards/Seccion3Reporte4';
 import Seccion3Reporte5 from './components/dashboards/Seccion3Reporte5';
 import RelevantesSeccion1Reporte1 from './components/dashboards/RelevantesSeccion1Reporte1';
 import RelevantesSeccion1Reporte2 from './components/dashboards/RelevantesSeccion1Reporte2';
+import RelevantesSeccion1Reporte3 from './components/dashboards/RelevantesSeccion1Reporte3';
 import './App.css';
 
 function App() {
@@ -57,6 +58,7 @@ function App() {
                 <Route exact path="/seccion-tres-reporte-cinco" component={Seccion3Reporte5} />
                 <Route exact path="/relevantes-seccion-uno-reporte-uno" component={RelevantesSeccion1Reporte1} />
                 <Route exact path="/relevantes-seccion-uno-reporte-dos" component={RelevantesSeccion1Reporte2} />
+                <Route exact path="/relevantes-seccion-uno-reporte-tres" component={RelevantesSeccion1Reporte3} />
               </Switch>
             </Col>
           </Row>
