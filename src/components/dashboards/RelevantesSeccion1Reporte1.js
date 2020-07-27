@@ -4,14 +4,14 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
-import Dona from './Graficas/Dona';
-import Linear from './Graficas/Linear';
-import Tabla from './Graficas/Tabla';
+import MyResponsiveCalendar from './Graficas/Nivo/Calendar';
+import ForceDirected from './Graficas/ForceDirected';
+import Saunky from './Graficas/Saunky';
 
 function RelevantesSeccion1Reporte1() {
     return (
         <>
-            <Titulo texto="Reporte 1: Validación de Estructura del Reporte" />
+            <Titulo texto="Reporte 1: Visualizador de Campos y Registros" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -28,22 +28,24 @@ function RelevantesSeccion1Reporte1() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Número de Errores de Estructura por etiqueta en reporte</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Número de Errores de Estructura por etiqueta en reporte</h4>
                         <hr />
-                        <Dona />
+                        <div style={{height: "400px"}}>
+                            <ForceDirected />
+                        </div>
                     </Col>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Tendencia de errores de estructura por etiqueta</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Número de registros reportados por fecha</h4>
                         <hr />
-                        <Linear />
+                        <div style={{height: "400px"}}>
+                            <MyResponsiveCalendar />
+                        </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <hr />
-                        <h4><span class="lnr lnr-chevron-right"></span> Errores de estructura por etiqueta en reporte</h4>
-                        <hr />
-                        <Tabla />
+                        <Saunky />
                     </Col>
                 </Row>
             </Container>
