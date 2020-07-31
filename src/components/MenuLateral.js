@@ -71,7 +71,7 @@ function MenuLateral() {
                 <li>
                     <h3>SECCIÓN I</h3>
                     <ul>
-                        <li><Link to="/"><b>Reporte 1</b><br />Validación de columnas</Link></li>
+                        <li><Link to="/inusuales-seccion-uno-reporte-uno"><b>Reporte 1</b><br />Validación de columnas</Link></li>
                         <li><Link to="/"><b>Reporte 2</b><br />Errores de Estructura y de columnas relacionadas</Link></li>
                         <li><Link to="/"><b>Reporte 3</b><br />Errores en RFC/CURP</Link></li>
                         <li><Link to="/"><b>Reporte 4</b><br />Validacion de Registros con consecutivo de cuentas/ personas relacionadas</Link></li>
