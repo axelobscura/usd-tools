@@ -5,6 +5,7 @@
   "homepage": "http://axelobscura.github.io/dashboard-gestell",
   "dependencies": {
     "@amcharts/amcharts4": "^4.9.30",
+    "@amcharts/amcharts4-geodata": "^4.1.16",
     "@nivo/calendar": "^0.62.0",
     "@nivo/network": "^0.62.0",
     "@testing-library/jest-dom": "^4.2.4",

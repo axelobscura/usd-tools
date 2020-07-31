@@ -7,7 +7,7 @@ import Titulo from './Titulo/Titulo';
 function RelevantesSeccion2Reporte4() {
     return (
         <>
-            <Titulo texto="Reporte 8: Coincidencia en listas negras de personas físicas y morales en reporte de operaciones relevantes" />
+            <Titulo texto="Reporte 8: Análisis de registros en reporte de operaciones relevantes por actividad económica" />
             <Container fluid={true}>
                 <Row>
                     <Col>
