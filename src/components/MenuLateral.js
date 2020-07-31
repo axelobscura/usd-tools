@@ -72,12 +72,12 @@ function MenuLateral() {
                     <h3>SECCIÓN I</h3>
                     <ul>
                         <li><Link to="/inusuales-seccion-uno-reporte-uno"><b>Reporte 1</b><br />Validación de columnas</Link></li>
-                        <li><Link to="/"><b>Reporte 2</b><br />Errores de Estructura y de columnas relacionadas</Link></li>
-                        <li><Link to="/"><b>Reporte 3</b><br />Errores en RFC/CURP</Link></li>
-                        <li><Link to="/"><b>Reporte 4</b><br />Validacion de Registros con consecutivo de cuentas/ personas relacionadas</Link></li>
-                        <li><Link to="/"><b>Reporte 5</b><br />Arbol de relacion de Registros , subregistros y columnas en Reporte de Operaciones Inusuales</Link></li>
-                        <li><Link to="/"><b>Reporte 6</b><br />Visualizacion e Indicadores Columna 40: Descripcion de la operación</Link></li>
-                        <li><Link to="/"><b>Reporte 7</b><br />Visualizacion e Indicadores Columna 41: Razones por las que el acto u operación se considera inusual</Link></li>
+                        <li><Link to="/inusuales-seccion-uno-reporte-dos"><b>Reporte 2</b><br />Errores de Estructura y de columnas relacionadas</Link></li>
+                        <li><Link to="/inusuales-seccion-uno-reporte-tres"><b>Reporte 3</b><br />Errores en RFC/CURP</Link></li>
+                        <li><Link to="/inusuales-seccion-uno-reporte-cuatro"><b>Reporte 4</b><br />Validacion de Registros con consecutivo de cuentas/ personas relacionadas</Link></li>
+                        <li><Link to="/inusuales-seccion-uno-reporte-cinco"><b>Reporte 5</b><br />Arbol de relacion de Registros , subregistros y columnas en Reporte de Operaciones Inusuales</Link></li>
+                        <li><Link to="/inusuales-seccion-uno-reporte-seis"><b>Reporte 6</b><br />Visualizacion e Indicadores Columna 40: Descripcion de la operación</Link></li>
+                        <li><Link to="/inusuales-seccion-uno-reporte-siete"><b>Reporte 7</b><br />Visualizacion e Indicadores Columna 41: Razones por las que el acto u operación se considera inusual</Link></li>
                     </ul>
                 </li>
                 <li>

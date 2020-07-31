@@ -35,6 +35,12 @@ import RelevantesSeccion2Reporte3 from './components/dashboards/RelevantesSeccio
 import RelevantesSeccion2Reporte4 from './components/dashboards/RelevantesSeccion2Reporte4';
 import RelevantesSeccion2Reporte5 from './components/dashboards/RelevantesSeccion2Reporte5';
 import InusualesSeccion1Reporte1 from './components/dashboards/InusualesSeccion1Reporte1';
+import InusualesSeccion1Reporte2 from './components/dashboards/InusualesSeccion1Reporte2';
+import InusualesSeccion1Reporte3 from './components/dashboards/InusualesSeccion1Reporte3';
+import InusualesSeccion1Reporte4 from './components/dashboards/InusualesSeccion1Reporte4';
+import InusualesSeccion1Reporte5 from './components/dashboards/InusualesSeccion1Reporte5';
+import InusualesSeccion1Reporte6 from './components/dashboards/InusualesSeccion1Reporte6';
+import InusualesSeccion1Reporte7 from './components/dashboards/InusualesSeccion1Reporte7';
 import './App.css';
 
 function App() {
@@ -74,6 +80,12 @@ function App() {
                 <Route exact path="/relevantes-seccion-dos-reporte-cinco" component={RelevantesSeccion2Reporte5} />
                 <Route exact path="/relevantes-seccion-dos-reporte-cinco" component={RelevantesSeccion2Reporte5} />
                 <Route exact path="/inusuales-seccion-uno-reporte-uno" component={InusualesSeccion1Reporte1} />
+                <Route exact path="/inusuales-seccion-uno-reporte-dos" component={InusualesSeccion1Reporte2} />
+                <Route exact path="/inusuales-seccion-uno-reporte-tres" component={InusualesSeccion1Reporte3} />
+                <Route exact path="/inusuales-seccion-uno-reporte-cuatro" component={InusualesSeccion1Reporte4} />
+                <Route exact path="/inusuales-seccion-uno-reporte-cinco" component={InusualesSeccion1Reporte5} />
+                <Route exact path="/inusuales-seccion-uno-reporte-seis" component={InusualesSeccion1Reporte6} />
+                <Route exact path="/inusuales-seccion-uno-reporte-siete" component={InusualesSeccion1Reporte7} />
               </Switch>
             </Col>
           </Row>
