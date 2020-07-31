@@ -33,6 +33,7 @@ import RelevantesSeccion2Reporte1 from './components/dashboards/RelevantesSeccio
 import RelevantesSeccion2Reporte2 from './components/dashboards/RelevantesSeccion2Reporte2';
 import RelevantesSeccion2Reporte3 from './components/dashboards/RelevantesSeccion2Reporte3';
 import RelevantesSeccion2Reporte4 from './components/dashboards/RelevantesSeccion2Reporte4';
+import RelevantesSeccion2Reporte5 from './components/dashboards/RelevantesSeccion2Reporte5';
 import './App.css';
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
                 <Route exact path="/relevantes-seccion-dos-reporte-dos" component={RelevantesSeccion2Reporte2} />
                 <Route exact path="/relevantes-seccion-dos-reporte-tres" component={RelevantesSeccion2Reporte3} />
                 <Route exact path="/relevantes-seccion-dos-reporte-cuatro" component={RelevantesSeccion2Reporte4} />
+                <Route exact path="/relevantes-seccion-dos-reporte-cinco" component={RelevantesSeccion2Reporte5} />
               </Switch>
             </Col>
           </Row>

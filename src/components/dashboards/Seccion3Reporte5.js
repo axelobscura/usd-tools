@@ -4,7 +4,7 @@ import Titulo from './Titulo/Titulo';
 function Seccion3Reporte5() {
     return (
         <>
-            <Titulo texto="Reporte 14 : Análisis de registros en Reporte de Transferencias Internacionales de Fondos (TIF)  enviadas de acuerdo a Geografía" />
+            <Titulo texto="Reporte 8: Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones relevantes" />
         </>
     )
 }

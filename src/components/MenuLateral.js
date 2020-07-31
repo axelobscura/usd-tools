@@ -54,6 +54,7 @@ function MenuLateral() {
                         <li><Link to="/relevantes-seccion-dos-reporte-dos"><b>Reporte 6</b><br />Operaciones relevantes de Personas físicas mayores de 80 años, menores de edad y personas morales con menos de 3 años de constitución</Link></li>
                         <li><Link to="/relevantes-seccion-dos-reporte-tres"><b>Reporte 7</b><br />Análisis de registros en reporte de operaciones relevantes por actividad económica</Link></li>
                         <li><Link to="/relevantes-seccion-dos-reporte-cuatro"><b>Reporte 8</b><br />Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones relevantes</Link></li>
+                        <li><Link to="/relevantes-seccion-dos-reporte-cinco"><b>Reporte 9</b><br />Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones relevantes</Link></li>
                     </ul>
                 </li>
                 <li>
