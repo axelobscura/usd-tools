@@ -28,6 +28,34 @@ function InusualesSeccion1Reporte6() {
                         </Form.Group>
                     </Col>
                 </Row>
+                <Row>
+                    <Col>
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                    </Col>
+                    <Col>
+                        <h4><span className="lnr lnr-chevron-right"></span> Información de la descripción de la operación</h4>
+                        <hr />
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                        <Tabla />
+                        
+                    </Col>
+                </Row>
             </Container>
         </>
     )
