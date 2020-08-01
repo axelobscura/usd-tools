@@ -6,18 +6,18 @@ import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
 import Dona from './Graficas/Dona';
 import Multilineas from './Graficas/Multilineas';
-import StackedBar from './Graficas/StackedBar';
 import Tabla from './Graficas/Tabla';
 import Stacked from './Graficas/Stacked';
+import ColorMap from './Graficas/ColorMap';
 import StackedClustered from './Graficas/StackedClustered';
 import StackedClustered1 from './Graficas/StackedClustered1';
 import StackedClustered2 from './Graficas/StackedClustered2';
 import StackedClustered3 from './Graficas/StackedClustered3';
 
-function RelevantesSeccion2Reporte4() {
+function InusualesSeccion2Reporte3() {
     return (
         <>
-            <Titulo texto="Reporte 8: Análisis de registros en reporte de operaciones relevantes por actividad económica" />
+            <Titulo texto="Reporte 10: Análisis de registros en reporte de operaciones inusuales por geografía" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -46,7 +46,7 @@ function RelevantesSeccion2Reporte4() {
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Registros de acuerdo al monto por moneda de mayor a menor por actividad económica en reporte</h4>
                         <hr />
-                        <StackedBar />
+                        <ColorMap />
                     </Col>
                 </Row>
                 <Row>
@@ -118,4 +118,4 @@ function RelevantesSeccion2Reporte4() {
     )
 }
 
-export default RelevantesSeccion2Reporte4;
+export default InusualesSeccion2Reporte3;

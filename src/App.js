@@ -41,6 +41,10 @@ import InusualesSeccion1Reporte4 from './components/dashboards/InusualesSeccion1
 import InusualesSeccion1Reporte5 from './components/dashboards/InusualesSeccion1Reporte5';
 import InusualesSeccion1Reporte6 from './components/dashboards/InusualesSeccion1Reporte6';
 import InusualesSeccion1Reporte7 from './components/dashboards/InusualesSeccion1Reporte7';
+import InusualesSeccion2Reporte1 from './components/dashboards/InusualesSeccion2Reporte1';
+import InusualesSeccion2Reporte2 from './components/dashboards/InusualesSeccion2Reporte2';
+import InusualesSeccion2Reporte3 from './components/dashboards/InusualesSeccion2Reporte3';
+import InusualesSeccion2Reporte4 from './components/dashboards/InusualesSeccion2Reporte4';
 import './App.css';
 
 function App() {
@@ -86,6 +90,10 @@ function App() {
                 <Route exact path="/inusuales-seccion-uno-reporte-cinco" component={InusualesSeccion1Reporte5} />
                 <Route exact path="/inusuales-seccion-uno-reporte-seis" component={InusualesSeccion1Reporte6} />
                 <Route exact path="/inusuales-seccion-uno-reporte-siete" component={InusualesSeccion1Reporte7} />
+                <Route exact path="/inusuales-seccion-dos-reporte-uno" component={InusualesSeccion2Reporte1} />
+                <Route exact path="/inusuales-seccion-dos-reporte-dos" component={InusualesSeccion2Reporte2} />
+                <Route exact path="/inusuales-seccion-dos-reporte-tres" component={InusualesSeccion2Reporte3} />
+                <Route exact path="/inusuales-seccion-dos-reporte-cuatro" component={InusualesSeccion2Reporte4} />
               </Switch>
             </Col>
           </Row>

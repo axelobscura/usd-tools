@@ -9,15 +9,16 @@ import Multilineas from './Graficas/Multilineas';
 import StackedBar from './Graficas/StackedBar';
 import Tabla from './Graficas/Tabla';
 import Stacked from './Graficas/Stacked';
+
 import StackedClustered from './Graficas/StackedClustered';
 import StackedClustered1 from './Graficas/StackedClustered1';
 import StackedClustered2 from './Graficas/StackedClustered2';
 import StackedClustered3 from './Graficas/StackedClustered3';
 
-function RelevantesSeccion2Reporte4() {
+function InusualesSeccion2Reporte4() {
     return (
         <>
-            <Titulo texto="Reporte 8: Análisis de registros en reporte de operaciones relevantes por actividad económica" />
+            <Titulo texto="Reporte 11: Análisis de registros en reporte de operaciones inusuales por actividad económica" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -118,4 +119,4 @@ function RelevantesSeccion2Reporte4() {
     )
 }
 
-export default RelevantesSeccion2Reporte4;
+export default InusualesSeccion2Reporte4;

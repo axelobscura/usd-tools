@@ -35,6 +35,36 @@ function RelevantesSeccion2Reporte5() {
                 </Row>
                 <Row>
                     <Col>
+                    <hr />
+                    <h4><span className="lnr lnr-chevron-right"></span> Personas en registros  en la lista de personas bloqueadas</h4>
+                        <hr />
+                        <TablaColor />
+                    </Col>
+                    <Col>
+                    <hr />
+                    <h4><span className="lnr lnr-chevron-right"></span> Numero de personas en reporte coincidentes o no coincidentes en lista de personas bloqueadas</h4>
+                        <hr />
+                        <Pay />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <TablaColor />
+                    </Col>
+                    <Col>
+                        <Pay />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <TablaColor />
+                    </Col>
+                    <Col>
+                        <Pay />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
                         <TablaColor />
                     </Col>
                     <Col>
