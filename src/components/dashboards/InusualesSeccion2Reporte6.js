@@ -105,7 +105,7 @@ function InusualesSeccion2Reporte6() {
                     <TablaColor/>
                     </Col>
                     <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Numero de personas relacionadas coincidentes, no coincidentes y parcialmente coincidentes en listas negra</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Numero de personas relacionadas coincidentes, no coincidentes y parcialmente coincidentes en listas negra...</h4>
                         <hr />
                         <Pay />
                     </Col>
