@@ -8,10 +8,10 @@ import Pay from './Graficas/Pay';
 import Multilineas from './Graficas/Multilineas';
 import TablaColor from './Graficas/TablaColor';
 
-function RelevantesSeccion2Reporte5() {
+function InusualesSeccion2Reporte5() {
     return (
         <>
-            <Titulo texto="Reporte 8: Análisis de registros en reporte de operaciones relevantes por actividad económica" />
+            <Titulo texto="Reporte 12: Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones inusuales" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -94,4 +94,4 @@ function RelevantesSeccion2Reporte5() {
     )
 }
 
-export default RelevantesSeccion2Reporte5;
+export default InusualesSeccion2Reporte5;

@@ -87,8 +87,8 @@ function MenuLateral() {
                         <li><Link to="/inusuales-seccion-dos-reporte-dos"><b>Reporte 9</b><br />Operaciones inusuales de Personas fisicas mayores de 80 años, menores de edad y personas morales con menos de 3 años de constitución</Link></li>
                         <li><Link to="/inusuales-seccion-dos-reporte-tres"><b>Reporte 10</b><br />Análisis de registros en reporte de operaciones inusuales por geografía</Link></li>
                         <li><Link to="/inusuales-seccion-dos-reporte-cuatro"><b>Reporte 11</b><br />Análisis de registros en reporte de operaciones inusuales por actividad económica</Link></li>
-                        <li><Link to="/"><b>Reporte 12</b><br />Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones inusuales</Link></li>
-                        <li><Link to="/"><b>Reporte 13</b><br />Análisis de registros en reporte de operaciones inusuales con consecutivo de cuentas y/o personas relacionadas</Link></li>
+                        <li><Link to="/inusuales-seccion-dos-reporte-cinco"><b>Reporte 12</b><br />Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones inusuales</Link></li>
+                        <li><Link to="/inusuales-seccion-dos-reporte-seis"><b>Reporte 13</b><br />Análisis de registros en reporte de operaciones inusuales con consecutivo de cuentas y/o personas relacionadas</Link></li>
                     </ul>
                 </li>
                 <li>
