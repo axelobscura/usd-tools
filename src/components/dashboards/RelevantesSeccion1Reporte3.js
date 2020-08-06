@@ -4,14 +4,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
-import Dona from './Graficas/Dona';
-import Linear from './Graficas/Linear';
+import Stacked from './Graficas/Stacked';
+import Pay from './Graficas/Pay';
+import StackedBar from './Graficas/StackedBar';
 import Tabla from './Graficas/Tabla';
+import Barras from './Graficas/Barras';
 
-function Seccion1Reporte1() {
+function RelevantesSeccion1Reporte3() {
     return (
         <>
-            <Titulo texto="Reporte 1: Validación de Estructura del Reporte" />
+            <Titulo texto="Reporte 3: Errores en Curp/RFC" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -28,20 +30,31 @@ function Seccion1Reporte1() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Número de Errores de Estructura por etiqueta en reporte</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Número de errores en RFC/CURP por mes</h4>
                         <hr />
-                        <Dona />
+                        <Stacked />
                     </Col>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Tendencia de errores de estructura por etiqueta</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Personas Físicas con errores en CURP</h4>
                         <hr />
-                        <Linear />
+                        <Tabla />
+                    </Col>
+                    <Col>
+                        <h4><span className="lnr lnr-chevron-right"></span> Personas físicas con CURP inválido y personas morales con RFC inválido</h4>
+                        <hr />
+                        <Pay />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
+                    <hr />
+                        <h4><span className="lnr lnr-chevron-right"></span> Personas físicas con RFC inválidos/Personas morales con RFC inválido</h4>
                         <hr />
-                        <h4><span class="lnr lnr-chevron-right"></span> Errores de estructura por etiqueta en reporte</h4>
+                        <Tabla />
+                    </Col>
+                    <Col>
+                    <hr />
+                        <h4><span className="lnr lnr-chevron-right"></span> Tabla con errores relacionados por registro</h4>
                         <hr />
                         <Tabla />
                     </Col>
@@ -51,4 +64,4 @@ function Seccion1Reporte1() {
     )
 }
 
-export default Seccion1Reporte1;
+export default RelevantesSeccion1Reporte3;

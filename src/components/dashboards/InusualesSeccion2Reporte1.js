@@ -4,18 +4,25 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
-import Dona from './Graficas/Dona';
-import Linear from './Graficas/Linear';
+import ColorMap from './Graficas/ColorMap';
+import Calendar from './Graficas/Nivo/Calendar';
+import XYChart from './Graficas/XYChart';
 import Tabla from './Graficas/Tabla';
 
-function Seccion1Reporte1() {
+function InusualesSeccion2Reporte1() {
     return (
         <>
-            <Titulo texto="Reporte 1: Validación de Estructura del Reporte" />
+            <Titulo texto="Reporte 8 - Análisis de personas físicas y morales en reportes inusuales" />
             <Container fluid={true}>
                 <Row>
                     <Col>
+                        <h4><span class="lnr lnr-chevron-right"></span> Geolocalización de los registros reportados</h4>
+                        <hr />
+                        <ColorMap />
+                    </Col>
+                    <Col>
                         <Form.Group style={{ width: '100%' }}>
+                            <h4><span class="lnr lnr-chevron-right"></span> Fechas en las que se reporto a la persona</h4>
                             <Form.Control as="select" size="lg" custom>
                                 <option>Seleccionar periodo</option>
                                 <option>2</option>
@@ -24,24 +31,19 @@ function Seccion1Reporte1() {
                                 <option>5</option>
                             </Form.Control>
                         </Form.Group>
+                        <div style={{height: '350px'}}>
+                            <Calendar />
+                        </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Número de Errores de Estructura por etiqueta en reporte</h4>
+                        <h4><span class="lnr lnr-chevron-right"></span> Operaciones relevantes de la persona moral / física </h4>
                         <hr />
-                        <Dona />
+                        <XYChart />
                     </Col>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Tendencia de errores de estructura por etiqueta</h4>
-                        <hr />
-                        <Linear />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <hr />
-                        <h4><span class="lnr lnr-chevron-right"></span> Errores de estructura por etiqueta en reporte</h4>
+                        <h4><span class="lnr lnr-chevron-right"></span> Errores presentes en los registros de la persona seleccionada</h4>
                         <hr />
                         <Tabla />
                     </Col>
@@ -51,4 +53,4 @@ function Seccion1Reporte1() {
     )
 }
 
-export default Seccion1Reporte1;
+export default InusualesSeccion2Reporte1;

@@ -4,14 +4,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
-import Dona from './Graficas/Dona';
-import Linear from './Graficas/Linear';
 import Tabla from './Graficas/Tabla';
+import Pay from './Graficas/Pay';
 
-function Seccion1Reporte1() {
+function InusualesSeccion1Reporte2() {
     return (
         <>
-            <Titulo texto="Reporte 1: Validación de Estructura del Reporte" />
+            <Titulo texto="Reporte 2 - Errores de Estructura y de columnas relacionadas" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -28,20 +27,20 @@ function Seccion1Reporte1() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Número de Errores de Estructura por etiqueta en reporte</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Registros con mal uso de separadores y columnas obligatoias vacias</h4>
                         <hr />
-                        <Dona />
+                        <Tabla />
                     </Col>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Tendencia de errores de estructura por etiqueta</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Porcentaje de errores por mal uso de separadores/espacios en blanco por columna en reporte de inusuales</h4>
                         <hr />
-                        <Linear />
+                        <Pay />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
                         <hr />
-                        <h4><span class="lnr lnr-chevron-right"></span> Errores de estructura por etiqueta en reporte</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Registros con errores en columnas relacionadas</h4>
                         <hr />
                         <Tabla />
                     </Col>
@@ -51,4 +50,4 @@ function Seccion1Reporte1() {
     )
 }
 
-export default Seccion1Reporte1;
+export default InusualesSeccion1Reporte2;

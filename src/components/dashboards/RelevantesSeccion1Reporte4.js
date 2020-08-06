@@ -2,15 +2,16 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Titulo from './Titulo/Titulo';
 
-function Titulo(props) {
+function RelevantesSeccion1Reporte4() {
     return (
         <>
+            <Titulo texto="Reporte 4: Validación de Tipo de Cambio" />
             <Container fluid={true}>
                 <Row>
                     <Col>
-                        <h1>{props.texto}</h1>
-                        <hr />
+                        
                     </Col>
                 </Row>
             </Container>
@@ -18,4 +19,4 @@ function Titulo(props) {
     )
 }
 
-export default Titulo;
+export default RelevantesSeccion1Reporte4;

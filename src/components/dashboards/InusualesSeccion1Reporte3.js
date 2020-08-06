@@ -4,15 +4,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
-import Dona from './Graficas/Dona';
-import Linear from './Graficas/Linear';
-import Barras from './Graficas/Barras';
+import Multilineas from './Graficas/Multilineas';
+import StackedClustered from './Graficas/StackedClustered';
 import Tabla from './Graficas/Tabla';
+import Pay from './Graficas/Pay';
 
-function Seccion1Reporte2() {
+function InusualesSeccion1Reporte3() {
     return (
         <>
-            <Titulo texto="Reporte 2: Validación de Etiquetas" />
+            <Titulo texto="Reporte 3 - Errores en RFC/CURP" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -29,33 +29,31 @@ function Seccion1Reporte2() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Número de Errores de contenido en etiquetas por reporte</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Número de errores en RFC/CURP en reporte de operaciones inusuales</h4>
                         <hr />
-                        <Dona />
+                        <StackedClustered />
                     </Col>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Tendencia de errores de contenido por etiqueta</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Personas físicas con errores en CURP en reporte de operaciones inusuales</h4>
                         <hr />
-                        <Linear />
+                        <Tabla />
                     </Col>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Errores en etiquetas por mal uso de catálogos</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Personas físicas con CURP inválido y personas morales con RFC inválido en reporte de operaciones inusuales</h4>
                         <hr />
-                        <Dona />
+                        <Pay />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <hr />
-                        <h4><span class="lnr lnr-chevron-right"></span> Tipos de errores encontrados por cada etiqueta</h4>
-                        <hr />
-                        <Barras />
-                    </Col>
-                    <Col>
-                        <hr />
-                        <h4><span class="lnr lnr-chevron-right"></span> Campos erroneos por reporte</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Personas físicas con RFC inválidos / Personas morales con RFC inválido en reporte de operaciones inusuales</h4>
                         <hr />
                         <Tabla />
+                    </Col>
+                    <Col>
+                        <h4><span className="lnr lnr-chevron-right"></span> Gráfica de frecuencia de errores en RFC/CURP en reporte de operaciones inusuales</h4>
+                        <hr />
+                        <Multilineas />
                     </Col>
                 </Row>
             </Container>
@@ -63,4 +61,4 @@ function Seccion1Reporte2() {
     )
 }
 
-export default Seccion1Reporte2;
+export default InusualesSeccion1Reporte3;
