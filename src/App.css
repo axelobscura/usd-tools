@@ -7,3 +7,12 @@ body {
   background: #f2f2f2;
   z-index: 1;
 }
+
+td, th {
+  text-align: center;
+  vertical-align: top;
+}
+
+.table thead th {
+  vertical-align: top;
+}

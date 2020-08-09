@@ -11,6 +11,8 @@ import Tabla from './Graficas/Tabla';
 import Barras from './Graficas/Barras';
 
 function InusualesSeccion1Reporte1() {
+    const tablaHeader1 = ["Fecha de validación", "Nombre del archivo", "Número de Registro", "Columna validada", "Número de errores en columna", "Tipo de error por columna"];
+    const tablaContenido1 = ["20190420", "109.0056", "1", "Tipo de Reporte", "2", "El campo excede lo dispuesto en el DOF"];
     return (
         <>
             <Titulo texto="Reporte 1 - Visualizador de campos y registros" />
@@ -49,7 +51,10 @@ function InusualesSeccion1Reporte1() {
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Errores por columna en registros de reporte de operadores inusuales</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                     <Col>
                         <hr />

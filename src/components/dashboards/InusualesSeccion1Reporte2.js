@@ -8,6 +8,10 @@ import Tabla from './Graficas/Tabla';
 import Pay from './Graficas/Pay';
 
 function InusualesSeccion1Reporte2() {
+    const tablaHeader1 = ["Nombre del archivo", "Fecha de Validación", "Número de Registro", "Registro con mal uso de separadores", "Separadores extra"];
+    const tablaContenido1 = ["109.0056", "130420", "1", "Sí", "45"];
+    const tablaHeader2 = ["Nombre del archivo", "Fecha de Validación", "Número de Registro", "Columnas relacionadas invalidas que son obligatorias", "Error"];
+    const tablaContenido2 = ["109.0056", "130420", "456", "Razón social / Denominación", "Existe el campo Apellido Paterno, no debe de existir el campo apellido paterno  toda vez que se trata de una persona moral y no física"];
     return (
         <>
             <Titulo texto="Reporte 2 - Errores de Estructura y de columnas relacionadas" />
@@ -29,7 +33,10 @@ function InusualesSeccion1Reporte2() {
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Registros con mal uso de separadores y columnas obligatorias vacías</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={tablaHeader1}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Porcentaje de errores por mal uso de separadores/espacios en blanco por columna en reporte de inusuales</h4>
@@ -42,7 +49,10 @@ function InusualesSeccion1Reporte2() {
                         <hr />
                         <h4><span className="lnr lnr-chevron-right"></span> Registros con errores en columnas relacionadas</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={tablaHeader2}
+                            contenido={tablaContenido2}
+                        />
                     </Col>
                 </Row>
             </Container>

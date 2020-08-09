@@ -9,7 +9,13 @@ import StackedClustered from './Graficas/StackedClustered';
 import Tabla from './Graficas/Tabla';
 import Pay from './Graficas/Pay';
 
+
+
 function InusualesSeccion1Reporte3() {
+    const tablaHeader1 = ["Nombre", "Apellido Paterno", "Apellido Materno", "CURP Inválido", "Regsitro Número"];
+    const tablaContenido1 = ["Juan", "Perez", "Sandoval", "PEGO901223HDFZLKM", "1"];
+    const tablaHeader2 = ["Nombre completo / Denominación", "CURP inválido", "Registro Número"];
+    const tablaContenido2 = ["Juan Perez Sandoval", "PEGO901223HDFZLKM", "1"];
     return (
         <>
             <Titulo texto="Reporte 3 - Errores en RFC/CURP" />
@@ -36,7 +42,10 @@ function InusualesSeccion1Reporte3() {
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Personas físicas con errores en CURP en reporte de operaciones inusuales</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Personas físicas con CURP inválido y personas morales con RFC inválido en reporte de operaciones inusuales</h4>
@@ -48,7 +57,10 @@ function InusualesSeccion1Reporte3() {
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Personas físicas con RFC inválidos / Personas morales con RFC inválido en reporte de operaciones inusuales</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader2]}
+                            contenido={tablaContenido2}
+                        />
                     </Col>
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Gráfica de frecuencia de errores en RFC/CURP en reporte de operaciones inusuales</h4>

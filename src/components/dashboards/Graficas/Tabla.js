@@ -1,60 +1,66 @@
 import React from 'react';
+import parse from 'html-react-parser';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
 
-function Tabla() {
+function Tabla(props) {
+    const { tablaHeader, contenido } = props;
     return (
         <>
             <Container>
                 <Row>
                     <Col style={{ maxHeight: '250px', overflow: 'auto' }}>
-                        <Table striped bordered hover>
+
+                        {
+                            console.log(Array.isArray(contenido))
+                        }
+                        <Table striped bordered hover text-center>
                             <thead>
                                 <tr>
-                                    <th>Número de registro</th>
-                                    <th>Número de errores</th>
-                                    <th>Etiquets erróneas</th>
-                                    <th>Mensaje del error</th>
+                                    {
+                                        tablaHeader.map((valor, i) => {
+                                            return parse(`<th key=${i}>${valor}</th>`);
+                                        })
+                                    }
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>MT 001</td>
-                                    <td>4</td>
-                                    <td>blc_aba</td>
-                                    <td>Campo no es alfanumérico</td>
+                                    {
+                                        contenido.map((valor, i) => {
+                                            return parse(`<td key=${i}>${valor}</td>`);
+                                        })
+                                    }
                                 </tr>
                                 <tr>
-                                    <td>MT 001</td>
-                                    <td>4</td>
-                                    <td>blc_aba</td>
-                                    <td>Campo no es alfanumérico</td>
+                                    {
+                                        contenido.map((valor, i) => {
+                                            return parse(`<td key=${i}>${valor}</td>`);
+                                        })
+                                    }
                                 </tr>
                                 <tr>
-                                    <td>MT 001</td>
-                                    <td>4</td>
-                                    <td>blc_aba</td>
-                                    <td>Campo no es alfanumérico</td>
+                                    {
+                                        contenido.map((valor, i) => {
+                                            return parse(`<td key=${i}>${valor}</td>`);
+                                        })
+                                    }
                                 </tr>
                                 <tr>
-                                    <td>MT 001</td>
-                                    <td>4</td>
-                                    <td>blc_aba</td>
-                                    <td>Campo no es alfanumérico</td>
+                                    {
+                                        contenido.map((valor, i) => {
+                                            return parse(`<td key=${i}>${valor}</td>`);
+                                        })
+                                    }
                                 </tr>
                                 <tr>
-                                    <td>MT 001</td>
-                                    <td>4</td>
-                                    <td>blc_aba</td>
-                                    <td>Campo no es alfanumérico</td>
-                                </tr>
-                                <tr>
-                                    <td>MT 001</td>
-                                    <td>4</td>
-                                    <td>blc_aba</td>
-                                    <td>Campo no es alfanumérico</td>
+                                    {
+                                        contenido.map((valor, i) => {
+                                            return parse(`<td key=${i}>${valor}</td>`);
+                                        })
+                                    }
                                 </tr>
                             </tbody>
                         </Table>
