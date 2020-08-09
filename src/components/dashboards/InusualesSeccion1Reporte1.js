@@ -13,7 +13,7 @@ import Barras from './Graficas/Barras';
 function InusualesSeccion1Reporte1() {
     return (
         <>
-            <Titulo texto="Reporte 1: Validación de Etiquetas" />
+            <Titulo texto="Reporte 1 - Visualizador de campos y registros" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -30,7 +30,7 @@ function InusualesSeccion1Reporte1() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Número de errores por tipo en reporte trimestral</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Número de errores en reporte de operaciones inusuales</h4>
                         <hr />
                         <Dona />
                     </Col>
@@ -40,13 +40,14 @@ function InusualesSeccion1Reporte1() {
                         <Multilineas />
                     </Col>
                     <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Número de errores en reporte trimestral por columna</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Número de errores en registros por columna</h4>
                         <hr />
                         <StackedBar />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
+                        <h4><span className="lnr lnr-chevron-right"></span> Errores por columna en registros de reporte de operadores inusuales</h4>
                         <hr />
                         <Tabla />
                     </Col>
