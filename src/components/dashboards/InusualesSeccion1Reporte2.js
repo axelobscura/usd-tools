@@ -27,7 +27,7 @@ function InusualesSeccion1Reporte2() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Registros con mal uso de separadores y columnas obligatoias vacias</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Registros con mal uso de separadores y columnas obligatorias vacías</h4>
                         <hr />
                         <Tabla />
                     </Col>
