@@ -11,7 +11,7 @@ import TablaColor from './Graficas/TablaColor';
 function RelevantesSeccion2Reporte5() {
     return (
         <>
-            <Titulo texto="Reporte 8: Análisis de registros en reporte de operaciones relevantes por actividad económica" />
+            <Titulo texto="Reporte 8: Coincidencia en listas negras de personas físicas y morales en reporte de operaciones relevantes" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -29,6 +29,15 @@ function RelevantesSeccion2Reporte5() {
                 <Row>
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Frecuencia de coincidencias de personas fisicas / morales presentes en reporte de operaciones relevantes  en listas negras</h4>
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
                         <hr />
                         <Multilineas />
                     </Col>

@@ -15,9 +15,11 @@ import StackedClustered2 from './Graficas/StackedClustered2';
 import StackedClustered3 from './Graficas/StackedClustered3';
 
 function RelevantesSeccion2Reporte4() {
+    const tablaHeader1 = ["Archivo","Periodo de la operación","Numero del registro","Número de cuenta","Nombre / Denominación","RFC ","CURP","Fecha de nacimiento / constitución","Nacionalidad","Localidad","Domicilio","Actividad Económica","Tipo de operación","Fecha de la operación","Instrumento monetario","Monto","Moneda"];
+    const tablaContenido1 = ["TIF_01", "201901","MT-103-1","787873882","Pedro Sanchez Vitral","SAVI9012233V7","SAVI9012233V7","201201223","Mexicana","Guaymas","Juan Salvador Agraz 97, Cuajimalpa, 007678 CDMX","Agricultor","Deposito","20190304","Efectivo","$6.576.545,00","Pesos"];
     return (
         <>
-            <Titulo texto="Reporte 8: Análisis de registros en reporte de operaciones relevantes por actividad económica" />
+            <Titulo texto="Reporte 7: Análisis de registros en reporte de operaciones relevantes por actividad económica" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -66,7 +68,10 @@ function RelevantesSeccion2Reporte4() {
                 </Row>
                 <Row>
                     <Col style={{ height: '100px', overflow: 'hidden'}}>
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                         <hr />
                     </Col>
                 </Row>

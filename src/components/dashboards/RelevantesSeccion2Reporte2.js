@@ -10,6 +10,8 @@ import XYChart from './Graficas/XYChart';
 import Tabla from './Graficas/Tabla';
 
 function RelevantesSeccion2Reporte2() {
+    const tablaHeader1 = ["Error 1","RFC no coincide con lo estipulado en el DOF"];
+    const tablaContenido1 = ["Error 2", "No existe el campo nombre y este es obligatorio pues se trata de una persona física"];
     return (
         <>
             <Titulo texto="Reporte 6: Análisis de personas físicas y morales en reporte de operaciones relevantes" />
@@ -57,7 +59,10 @@ function RelevantesSeccion2Reporte2() {
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Errores presentes en los registros de la persona seleccionada</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                 </Row>
             </Container>

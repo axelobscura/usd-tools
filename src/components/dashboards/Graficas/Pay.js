@@ -25,7 +25,7 @@ const data = {
 function Pay() {
     return (
         <div>
-            <Pie data={data} />
+            <Pie data={data} style={{height: "100px"}} />
         </div>
     );
 };
