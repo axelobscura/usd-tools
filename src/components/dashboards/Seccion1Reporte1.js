@@ -9,6 +9,8 @@ import Linear from './Graficas/Linear';
 import Tabla from './Graficas/Tabla';
 
 function Seccion1Reporte1() {
+    const tablaHeader1 = ["Número de registro","Número de errores","Etiquetas erróneas","Mensaje de error"];
+    const tablaContenido1 = ["MT001", "4", "blc_aba", "Campo no es alfanumérico"];
     return (
         <>
             <Titulo texto="Reporte 1: Validación de Estructura del Reporte" />
@@ -43,7 +45,10 @@ function Seccion1Reporte1() {
                         <hr />
                         <h4><span class="lnr lnr-chevron-right"></span> Errores de estructura por etiqueta en reporte</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                 </Row>
             </Container>

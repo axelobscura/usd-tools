@@ -10,6 +10,8 @@ import Barras from './Graficas/Barras';
 import Tabla from './Graficas/Tabla';
 
 function Seccion1Reporte2() {
+    const tablaHeader1 = ["Número de registro","Número de errores","Etiquetas erróneas","Mensaje de error"];
+    const tablaContenido1 = ["MT001", "4", "blc_aba", "Campo no es alfanumérico"];
     return (
         <>
             <Titulo texto="Reporte 2: Validación de Etiquetas" />
@@ -55,7 +57,10 @@ function Seccion1Reporte2() {
                         <hr />
                         <h4><span class="lnr lnr-chevron-right"></span> Campos erroneos por reporte</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                 </Row>
             </Container>

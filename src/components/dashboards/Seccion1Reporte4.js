@@ -8,15 +8,39 @@ import Barras from './Graficas/Barras';
 import Tabla from './Graficas/Tabla';
 
 function Seccion1Reporte4() {
+    const tablaHeader1 = ["Folio del registro","Etiquetas vacios/inválidos que son obligatorias en el reporte","Fecha del reporte","Nombre del Archivo"];
+    const tablaContenido1 = ["34567", "Mes reportado", "9022020", "TIF_FEB_2020"];
+    const tablaHeader2 = ["Etiquetas relacionadas de la transferencia envio","Etiquetas vacios/inválidos que son obligatorios en esta etiqueta","Fecha del reporte","Nombre del Archivo"];
+    const tablaContenido2 = ["34567", "1.<entidades_participantes_envio> ", "9022020", "TIF_FEB_2020"];
+    const tablaHeader3 = ["Folio del registro","Etiquetas vacios/inválidos que son obligatorios en esta etiqueta","Fecha del reporte","Nombre del Archivo"];
+    const tablaContenido3 = ["34567", "1.<entidades_participantes_recepción>", "9022020","TIF_FEB_2020"];
+    const tablaHeader4 = ["Folio del registro","Etiquetas vacios/inválidos que son obligatorios en esta etiqueta","Fecha del reporte","Nombre del Archivo"];
+    const tablaContenido4 = ["34567", "1.<entidades_participantes_recepción>", "9022020","TIF_FEB_2020"];
     return (
         <>
             <Titulo texto="Reporte 4: Etiquetas relacionadas y reglas especiales" />
-            <Container>
+            <Container fluid={true}>
                 <Row>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Etiquetas relacionadas a operaciones vacias cuando la etiqueta está presente</h4>
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <h4><span class="lnr lnr-chevron-right"></span> Etiquetas relacionadas obligatorias</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Personas físicas en registros con errores de CURP</h4>
@@ -37,7 +61,10 @@ function Seccion1Reporte4() {
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Registro con Operación modificatoria pero sin información en la etiqueta 3.1.2.1</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader2]}
+                            contenido={tablaContenido2}
+                        />
                     </Col>
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Personas físicas en registros con errores de CURP</h4>
@@ -58,7 +85,10 @@ function Seccion1Reporte4() {
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Número de Errores de contenido en RFC/CURP por reporte</h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader3]}
+                            contenido={tablaContenido3}
+                        />
                     </Col>
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Personas físicas en registros con errores de CURP</h4>
