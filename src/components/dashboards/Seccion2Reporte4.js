@@ -11,10 +11,25 @@ import MapBubbles from './Graficas/MapBubbles';
 import Tabla from './Graficas/Tabla';
 
 function Seccion2Reporte4() {
+    const tablaHeader1 = ["Nombre del archivo","Nombre completo / Denominación del ordenante","CURP / RFC del ordenante","Nacionalidad del Ordenante","Numero del registro","Geografía del Ordenante","Datos de la operación origen","Monto, Moneda e Instrumento monetario origen","Datos del destinatario","Pais del destinatario","Datos de la operación Destino","Memo","Codigo BIC/ABA"];
+    const tablaContenido1 = ["TIF_01", "Patito SA DE CV", "PATO120113RK5", "Mexicana", "Folio MT103-453-190", "Boulevard Kukulcan, Colonia La Quinta, Cancun, Quintanaroo 01892, México", "190102USD1174","$1354USD DIVISAS","180120790662 CH ROBINSON WORLDWIDE INC 018999220025 CH ROBINSON WORLDWIDE INC","USA","USD1174","018999220025 CH ROBINSON WORLDWIDE INC","91000022"];
     return (
         <>
             <Titulo texto="Reporte 9: Análisis de registros de envío en reporte de Transferencias Internacionales de Fondos (TIF) por ordenante y destinatario" />
             <Container fluid={true}>
+                <Row>
+                    <Col>
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                    </Col>
+                </Row>
                 <Row>
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Ordenantes y destinatarios reportados más de una vez</h4>
@@ -69,7 +84,10 @@ function Seccion2Reporte4() {
                             <span className="lnr lnr-chevron-right"></span> Información de Ordenante y Destinatario por registro
                         </h4>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                 </Row>
             </Container>

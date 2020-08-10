@@ -16,7 +16,7 @@ function Seccion2Reporte1() {
     return (
         <>
             <Titulo texto="Reporte 6: Flujos de Transferencias Internacionales de Fondos enviados fuera de México" />
-            <Container>
+            <Container fluid={true}>
                 <Row>
                     <Col>
                         <Form.Group style={{ width: '100%' }}>
