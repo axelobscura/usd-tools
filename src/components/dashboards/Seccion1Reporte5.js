@@ -4,12 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import MyResponsiveNetwork from './Graficas/Nivo/Network';
+import Calendar from './Graficas/Nivo/Calendar';
 import Am from './Graficas/Am';
-import PolarArea from './Graficas/PolarArea';
-import CalHeat from './Graficas/CalHeat';
 import Form from 'react-bootstrap/Form';
-import Barras from './Graficas/Barras';
-import Tabla from './Graficas/Tabla';
 
 function Seccion1Reporte5() {
     return (
@@ -44,9 +41,10 @@ function Seccion1Reporte5() {
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Registro con Estructuras o contenidos inválidos en etiquetas por fecha de operación</h4>
                         <hr />
-                        <CalHeat />
+                        <div style={{height: '350px'}}>
+                            <Calendar />
+                        </div>
                     </Col>
-
                 </Row>
             </Container>
         </>
