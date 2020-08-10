@@ -28,7 +28,7 @@ function RelevantesSeccion1Reporte1() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Número de Errores de Estructura por etiqueta en reporte</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span>Visualización de Reporte de Operaciones relevantes</h4>
                         <hr />
                         <div style={{height: "400px"}}>
                             <ForceDirected />

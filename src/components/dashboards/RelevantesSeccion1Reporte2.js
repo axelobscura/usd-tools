@@ -11,6 +11,8 @@ import Tabla from './Graficas/Tabla';
 import Barras from './Graficas/Barras';
 
 function RelevantesSeccion1Reporte2() {
+    const tablaHeader1 = ["Fecha de validación","Nombre del archivo","Número de Registro","Columna validada","Número de errores en columna","Tipo de error por columna"];
+    const tablaContenido1 = ["20190420", "109,0056", "1", "Tipo de Reporte", "2", "El campo no es númerico"];
     return (
         <>
             <Titulo texto="Reporte 2: Validación de Columnas" />
@@ -48,7 +50,10 @@ function RelevantesSeccion1Reporte2() {
                 <Row>
                     <Col>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                     <Col>
                         <hr />
