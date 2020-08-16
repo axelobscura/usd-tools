@@ -16,6 +16,19 @@ function InusualesSeccion1Reporte5() {
             <Container fluid={true}>
                 <Row>
                     <Col>
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Análisis de distribución de atributos / catálogos por columna</h4>
                         <hr />
                         <StackedArea />
