@@ -18,7 +18,7 @@ function Seccion1Reporte3() {
     return (
         <>
             <Titulo texto="Reporte 3: Errores en CURP/RFC" />
-            <Container>
+            <Container fluid={true}>
                 <Row>
                     <Col>
                         <Form.Group style={{ width: '100%' }}>
