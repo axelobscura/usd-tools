@@ -59,7 +59,7 @@ function Seccion1Reporte4() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Registro con Operación modificatoria pero sin información en la etiqueta 3.1.2.1</h4>
+                        <h4><span class="lnr lnr-chevron-right"></span> Etiquetas relacionadas de la transferencia envio</h4>
                         <hr />
                         <Tabla
                             tablaHeader={[...tablaHeader2]}
@@ -88,6 +88,21 @@ function Seccion1Reporte4() {
                         <Tabla
                             tablaHeader={[...tablaHeader3]}
                             contenido={tablaContenido3}
+                        />
+                    </Col>
+                    <Col>
+                        <h4><span class="lnr lnr-chevron-right"></span> Personas físicas en registros con errores de CURP</h4>
+                        <hr />
+                        <Barras />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <h4><span class="lnr lnr-chevron-right"></span> Etiquetas relacionadas de vostro</h4>
+                        <hr />
+                        <Tabla
+                            tablaHeader={[...tablaHeader4]}
+                            contenido={tablaContenido4}
                         />
                     </Col>
                     <Col>
