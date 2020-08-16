@@ -9,8 +9,10 @@ import Tabla from './Graficas/Tabla';
 import Form from 'react-bootstrap/Form';
 
 function Seccion2Reporte3() {
-    const tablaHeader1 = ["Folio","Nombre / Denominación social del ordenante del envio","Fecha del reporte","Fecha de Nacimiento / Constitución del ordenante del envio","Moneda","Monto","Pais Destino","Beneficiarios envio"];
-    const tablaContenido1 = ["MT102-3-209", "Alejandro Vazquz Islas", "19000221", "USD", "$1.909.788,00", "Canada", "Goldcorp Inc"];
+    const tablaHeader1 = ["Folio","Nombre","Apellido Paterno","Apellido Materno","Fecha de Nacimiento","Edad (años)","Moneda","Monto","Pais Destino","Paises que envía a Mexico","Pais destino de baja imposición fiscal","Beneficiarios envio"];
+    const tablaContenido1 = ["MT102-3-209", "Alejandro", "Juarez", "Vazquez", "19000221", "120", "Envío","USD","$1.909.788,00","Canada","N/A","No","Goldcorp Inc"];
+    const tablaHeader2 = ["Folio","Denominación o razón social","Fecha de Constitución","Temporalidad (meses)","Envio / Recepción","Moneda","Monto","Pais Destino","Paises que envía a Mexico","Pais destino de baja imposición fiscal","Beneficiarios envio"];
+    const tablaContenido2 = ["MT102-3-209", "Tor M SA DE CV", "20190430", "12", "Envío", "USD", "$1.909.788,00","Canada","N/A","No","Goldcorp Inc"];
     return (
         <>
             <Titulo texto="Reporte 8: Transferencias Internacionales de Fondos de Personas Físicas mayores de 80 años, menores de edad y Personas morales con menos de 3 años de constitución" />
@@ -93,8 +95,8 @@ function Seccion2Reporte3() {
                         </Form.Group>
                         <hr />
                         <Tabla
-                            tablaHeader={[...tablaHeader1]}
-                            contenido={tablaContenido1}
+                            tablaHeader={[...tablaHeader2]}
+                            contenido={tablaContenido2}
                         />
                     </Col>
                 </Row>

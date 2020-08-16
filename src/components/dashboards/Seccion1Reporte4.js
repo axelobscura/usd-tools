@@ -15,7 +15,7 @@ function Seccion1Reporte4() {
     const tablaHeader3 = ["Folio del registro","Etiquetas vacios/inválidos que son obligatorios en esta etiqueta","Fecha del reporte","Nombre del Archivo"];
     const tablaContenido3 = ["34567", "1.<entidades_participantes_recepción>", "9022020","TIF_FEB_2020"];
     const tablaHeader4 = ["Folio del registro","Etiquetas vacios/inválidos que son obligatorios en esta etiqueta","Fecha del reporte","Nombre del Archivo"];
-    const tablaContenido4 = ["34567", "1.<entidades_participantes_recepción>", "9022020","TIF_FEB_2020"];
+    const tablaContenido4 = ["34567", "nombre participante vostro", "9022020","TIF_FEB_2020"];
     return (
         <>
             <Titulo texto="Reporte 4: Etiquetas relacionadas y reglas especiales" />
@@ -33,7 +33,7 @@ function Seccion1Reporte4() {
                         </Form.Group>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mb-3">
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Etiquetas relacionadas obligatorias</h4>
                         <hr />
@@ -43,7 +43,6 @@ function Seccion1Reporte4() {
                         />
                     </Col>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Personas físicas en registros con errores de CURP</h4>
                         <Form.Group style={{ width: '100%' }}>
                             <Form.Control as="select" size="lg" custom>
                                 <option>Seleccionar periodo</option>
@@ -53,13 +52,12 @@ function Seccion1Reporte4() {
                                 <option>5</option>
                             </Form.Control>
                         </Form.Group>
-                        <hr />
                         <Barras />
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mb-3">
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Registro con Operación modificatoria pero sin información en la etiqueta 3.1.2.1</h4>
+                        <h4><span class="lnr lnr-chevron-right"></span> Etiquetas relacionadas de la transferencia envio</h4>
                         <hr />
                         <Tabla
                             tablaHeader={[...tablaHeader2]}
@@ -67,7 +65,6 @@ function Seccion1Reporte4() {
                         />
                     </Col>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Personas físicas en registros con errores de CURP</h4>
                         <Form.Group style={{ width: '100%' }}>
                             <Form.Control as="select" size="lg" custom>
                                 <option>Seleccionar periodo</option>
@@ -77,11 +74,10 @@ function Seccion1Reporte4() {
                                 <option>5</option>
                             </Form.Control>
                         </Form.Group>
-                        <hr />
                         <Barras />
                     </Col>
                 </Row>
-                <Row>
+                <Row className="mb-3">
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Número de Errores de contenido en RFC/CURP por reporte</h4>
                         <hr />
@@ -91,8 +87,19 @@ function Seccion1Reporte4() {
                         />
                     </Col>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Personas físicas en registros con errores de CURP</h4>
+                        <Barras />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <h4><span class="lnr lnr-chevron-right"></span> Etiquetas relacionadas de vostro</h4>
                         <hr />
+                        <Tabla
+                            tablaHeader={[...tablaHeader4]}
+                            contenido={tablaContenido4}
+                        />
+                    </Col>
+                    <Col>
                         <Barras />
                     </Col>
                 </Row>

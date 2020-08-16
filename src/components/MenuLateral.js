@@ -25,6 +25,7 @@ function MenuLateral() {
                         <li><Link to="/seccion-dos-reporte-dos"><b>Reporte 7</b><br />Flujos de transferencias internacionales de fondos enviados a México</Link></li>
                         <li><Link to="/seccion-dos-reporte-tres"><b>Reporte 8</b><br />Transferencias internacionales de fondos de personas físicas mayores de 80 años menores de edad y personas morales con menos de tres años de constitución</Link></li>
                         <li><Link to="/seccion-dos-reporte-cuatro"><b>Reporte 9</b><br />Análisis de registros de envío en reporte de Transferencias Internacionales de Fondos (TIF) por ordenante y destinatario</Link></li>
+                        <li><Link to="/seccion-tres-reporte-seis"><b>Reporte 9.1</b><br />Coincidencia en listas negras de personas físicas y morales en reporte de transferencias internacionales de fondos TIF.</Link></li>
                     </ul>
                 </li>
                 <li>
@@ -51,20 +52,22 @@ function MenuLateral() {
                     <h3>SECCIÓN II</h3>
                     <ul>
                         <li><Link to="/relevantes-seccion-dos-reporte-uno"><b>Reporte 5</b><br />Análisis de personas físicas y morales en reporte de operaciones relevantes</Link></li>
+                        {/* 
                         <li><Link to="/relevantes-seccion-dos-reporte-dos"><b>Reporte 6</b><br />Operaciones relevantes de Personas físicas mayores de 80 años, menores de edad y personas morales con menos de 3 años de constitución</Link></li>
-                        <li><Link to="/relevantes-seccion-dos-reporte-tres"><b>Reporte 7</b><br />Análisis de registros en reporte de operaciones relevantes por actividad económica</Link></li>
-                        <li><Link to="/relevantes-seccion-dos-reporte-cuatro"><b>Reporte 8</b><br />Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones relevantes</Link></li>
-                        <li><Link to="/relevantes-seccion-dos-reporte-cinco"><b>Reporte 9</b><br />Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones relevantes</Link></li>
+                        */}
+                        <li><Link to="/relevantes-seccion-dos-reporte-tres"><b>Reporte 6</b><br />Análisis de registros en reporte de operaciones relevantes por actividad económica</Link></li>
+                        <li><Link to="/relevantes-seccion-dos-reporte-cuatro"><b>Reporte 7</b><br />Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones relevantes</Link></li>
+                        <li><Link to="/relevantes-seccion-dos-reporte-cinco"><b>Reporte 8</b><br />Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones relevantes</Link></li>
                     </ul>
                 </li>
                 <li>
                     <h3>SECCIÓN III</h3>
                     <ul>
-                        <li><Link to="/"><b>Reporte 8</b><br />Visualización en red de Reporte de Operaciones Relevantes</Link></li>
-                        <li><Link to="/"><b>Reporte 9</b><br />Análisis de Registros y atributos de Personas Físicas en Reporte de Operaciones Relevantes</Link></li>
-                        <li><Link to="/"><b>Reporte 10</b><br />Análisis de Registros y Atributos de Personas Morales en Reporte de Operaciones Relevantes</Link></li>
-                        <li><Link to="/"><b>Reporte 11</b><br />Análisis de registros en Reporte de Operaciones Relevantes de acuerdo a Montos</Link></li>
-                        <li><Link to="/"><b>Reporte 12</b><br />Análisis de registros de Operaciones Relevantes de personas físicas menores de edad, mayores de 80 años, y personas morales con menos de 3 años de constitución</Link></li>
+                        <li><Link to="/"><b>Reporte 9</b><br />Visualización en red de Reporte de Operaciones Relevantes</Link></li>
+                        <li><Link to="/"><b>Reporte 10</b><br />Análisis de Registros y atributos de Personas Físicas en Reporte de Operaciones Relevantes</Link></li>
+                        <li><Link to="/"><b>Reporte 11</b><br />Análisis de Registros y Atributos de Personas Morales en Reporte de Operaciones Relevantes</Link></li>
+                        <li><Link to="/"><b>Reporte 12</b><br />Análisis de registros en Reporte de Operaciones Relevantes de acuerdo a Montos</Link></li>
+                        <li><Link to="/"><b>Reporte 13</b><br />Análisis de registros de Operaciones Relevantes de personas físicas menores de edad, mayores de 80 años, y personas morales con menos de 3 años de constitución</Link></li>
                     </ul>
                 </li>
                 <h5 className="p-3 m-0" style={{background: '#333',color: '#fff'}}>INUSUALES</h5>

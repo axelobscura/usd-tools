@@ -109,6 +109,16 @@ function RelevantesSeccion2Reporte4() {
                             </Form.Control>
                         </Form.Group>
                         <hr />
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Entidad federativa</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                        <hr />
                         <StackedClustered2 />
                     </Col>
                     <Col>

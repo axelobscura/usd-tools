@@ -55,7 +55,8 @@ function RelevantesSeccion2Reporte3() {
                         <Barras />
                     </Col>
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Geolocalización de operaciones relevantes</h4>
+                    <hr />
+                        <h4><span class="lnr lnr-chevron-right"></span> Registros de personas físicas mayores de 80 años, menores de edad y personas morales con menos de tres años de constitución</h4>
                         <hr />
                         <Tabla
                             tablaHeader={[...tablaHeader1]}

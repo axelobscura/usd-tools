@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
 import MyResponsiveCalendar from './Graficas/Nivo/Calendar';
-import ForceDirected from './Graficas/ForceDirected';
+import Sunburst from './Graficas/Sunburst';
 import Saunky from './Graficas/Saunky';
 
 function RelevantesSeccion1Reporte1() {
@@ -31,7 +31,7 @@ function RelevantesSeccion1Reporte1() {
                         <h4><span className="lnr lnr-chevron-right"></span>Visualización de Reporte de Operaciones relevantes</h4>
                         <hr />
                         <div style={{height: "400px"}}>
-                            <ForceDirected />
+                            <Sunburst />
                         </div>
                     </Col>
                     <Col>

@@ -53,7 +53,23 @@ function RelevantesSeccion2Reporte5() {
                     <hr />
                     <h4><span className="lnr lnr-chevron-right"></span> Numero de personas en reporte coincidentes o no coincidentes en lista de personas bloqueadas</h4>
                         <hr />
-                        <Pay />
+                        <Row>
+                            <Col>
+                                <Pay />
+                            </Col>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                        </Row>
+                        
                     </Col>
                 </Row>
                 <Row>
@@ -67,7 +83,22 @@ function RelevantesSeccion2Reporte5() {
                     <hr />
                     <h4><span className="lnr lnr-chevron-right"></span> Numero de personas en reporte coincidentes o no coincidentes  en lista de ONU</h4>
                         <hr />
-                        <Pay />
+                        <Row>
+                            <Col>
+                                <Pay />
+                            </Col>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row>
@@ -81,7 +112,22 @@ function RelevantesSeccion2Reporte5() {
                     <hr />
                     <h4><span className="lnr lnr-chevron-right"></span> Número de personas en reporte coincidentes o no coincidentes en  lista OFAC</h4>
                         <hr />
-                        <Pay />
+                        <Row>
+                            <Col>
+                                <Pay />
+                            </Col>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row>
@@ -95,7 +141,22 @@ function RelevantesSeccion2Reporte5() {
                     <hr />
                     <h4><span className="lnr lnr-chevron-right"></span> Numero de personas en reporte coincidentes o no coincidentes en  lista SAT 69 A/B</h4>
                         <hr />
-                        <Pay />
+                        <Row>
+                            <Col>
+                                <Pay />
+                            </Col>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

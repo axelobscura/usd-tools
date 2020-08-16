@@ -80,6 +80,8 @@ function RelevantesSeccion2Reporte1() {
                             contenido={tablaContenido1}
                         />
                         <hr />
+                        <h4><span class="lnr lnr-chevron-right"></span> Información en los registros de la persona seleccionada</h4>
+                        <hr />
                         <Tabla
                             tablaHeader={[...tablaHeader2]}
                             contenido={tablaContenido2}

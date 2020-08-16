@@ -11,8 +11,10 @@ import Form from 'react-bootstrap/Form';
 import Tabla from './Graficas/Tabla';
 
 function Seccion2Reporte2() {
-    const tablaHeader1 = ["Folio","Nombre / Denominación social del ordenante del envio","Fecha del reporte","Fecha de Nacimiento / Constitución del ordenante del envio","Moneda","Monto","Pais Destino","Beneficiarios envio"];
-    const tablaContenido1 = ["MT102-3-209", "Alejandro Vazquz Islas", "19000221", "USD", "$1.909.788,00", "Canada", "Goldcorp Inc"];
+    const tablaHeader1 = ["Folio","Nombre / Denominación social del destinatario del envio","Fecha de Nacimiento / Constitución del destinatario del envio","Moneda","Monto","Entidad Federativa y otros datos geograficos","Ordenantes envio"];
+    const tablaContenido1 = ["MT102-3-209", "Alejandro Vazquz Islas", "19000221", "USD", "$1.909.788,00", "Zacatecas", "Goldcorp Inc"];
+    const tablaHeader2 = ["Folio","Nombre / Denominación social del destinatario del envio","Fecha de Nacimiento / Constitución del destinatario del envio","Moneda","Monto","Pais en vias de desarrollo considerado de riesgo por la EC","Ordenantes envio"];
+    const tablaContenido2 = ["MT102-3-209", "Alejandro Vazquz Islas", "19000221", "USD", "$1.909.788,00", "St. Marteen", "Goldcorp Inc"];
     return (
         <>
             <Titulo texto="Reporte 7: Flujos de Transferencias Internacionales de Fondos enviados a México" />
@@ -67,8 +69,8 @@ function Seccion2Reporte2() {
                     <Col>
                     <hr />
                         <Tabla
-                            tablaHeader={[...tablaHeader1]}
-                            contenido={tablaContenido1}
+                            tablaHeader={[...tablaHeader2]}
+                            contenido={tablaContenido2}
                         />
                     </Col>
                 </Row>

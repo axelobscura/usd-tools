@@ -32,8 +32,7 @@ function InusualesSeccion1Reporte7() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Columna 41 – razones por las
-que el acto se considera inusual</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Razones por las que el acto se considera inusual</h4>
                         <hr />
                         <Form.Group style={{ width: '100%' }}>
                             <Form.Control as="select" size="lg" custom>
