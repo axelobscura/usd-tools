@@ -9,8 +9,8 @@ import ColorMap from './Graficas/ColorMap';
 import Tabla from './Graficas/Tabla';
 
 function InusualesSeccion2Reporte2() {
-    const tablaHeader1 = ["Nombre del archivo", "Fecha de Análisis", "Número de Registro", "Número de palabras", "Montos detectados en las columnas", "Montos faltantes en el campo 40", "Fechas detectadas en las columnas", "Fechas faltantes en el campo 40", "Número de separadores utilizado en la columna", "Palabras con errores ortográficos", "Catalogos detectados en columnas pero faltantes en la columna 40"];
-    const tablaContenido1 = ["109.0056", "130420", "456", "1654", "$1,567", "$1,567", "31052020", "11062020", "3", "624", "Localidad"];
+    const tablaHeader1 = ["Archivo", "Numero del registro", "Nombre / Denominación", "RFC", "CURP", "Fecha de nacimiento / constitución", "Localidad", "Actividad Económica", "Tipo de operación", "Instrumento monetario", "Monto","Moneda"];
+    const tablaContenido1 = ["Relevantes 1", "1", "Pedro Sanchez Vitral", "SAVI9012233V7", "SAVI9012233V7", "$201.201.223,00", "Guaymas", "Agricultor", "Deposito", "Efectivo", "$6.576.545,00","Pesos"];
     return (
         <>
             <Titulo texto="Reporte 9 - Operaciones inusuales de Personas fisicas mayores de 80 años, menores de edad y personas morales con menos de 3 años de constitución" />
@@ -35,6 +35,12 @@ function InusualesSeccion2Reporte2() {
                     </Col>
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Geolocalización de operaciones inusuales</h4>
+                        <hr />
+                        <Form.Control as="select" size="lg" custom>
+                            <option>Seleccionar tipo de persona</option>
+                            <option>Física</option>
+                            <option>Moral</option>
+                        </Form.Control>
                         <hr />
                         <Form.Group style={{ width: '100%' }}>
                             <Form.Control as="select" size="lg" custom>
