@@ -15,8 +15,8 @@ import StackedClustered2 from './Graficas/StackedClustered2';
 import StackedClustered3 from './Graficas/StackedClustered3';
 
 function InusualesSeccion2Reporte3() {
-    const tablaHeader1 = ["Nombre del archivo", "Fecha de Análisis", "Número de Registro", "Número de palabras", "Montos detectados en las columnas", "Montos faltantes en el campo 40", "Fechas detectadas en las columnas", "Fechas faltantes en el campo 40", "Número de separadores utilizado en la columna", "Palabras con errores ortográficos", "Catalogos detectados en columnas pero faltantes en la columna 40"];
-    const tablaContenido1 = ["109.0056", "130420", "456", "1654", "$1,567", "$1,567", "31052020", "11062020", "3", "624", "Localidad"];
+    const tablaHeader1 = ["Archivo", "Periodo de la operación", "Numero del registro", "Número de cuenta", "Nombre / Denominación", "RFC", "CURP", "Fecha de nacimiento / constitución", "Nacionalidad", "Localidad", "Domicilio","Actividad Económica","Tipo de operación ","Fecha de la operación","Instrumento monetario"];
+    const tablaContenido1 = ["TIF_01", "201901", "MT-103-1", "787873882", "Pedro Sanchez Vitral", "SAVI9012233V7", "SAVI9012233V7", "201201223", "Mexicana", "Guaymas", "Juan Salvador Agraz 97, Cuajimalpa, 007678 CDMX","Agricultor","Deposito","20190304","Efectivo","$6.576.545,00","Pesos"];
     return (
         <>
             <Titulo texto="Reporte 10: Análisis de registros en reporte de operaciones inusuales por geografía" />
@@ -37,6 +37,7 @@ function InusualesSeccion2Reporte3() {
                 <Row>
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Distribución de Registros por geografía</h4>
+                        <hr />
                         <Form.Group style={{ width: '100%' }}>
                             <Form.Control as="select" size="lg" custom>
                                 <option>Seleccionar periodo</option>
@@ -52,10 +53,30 @@ function InusualesSeccion2Reporte3() {
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Frecuencia de registros por tipo de persona</h4>
                         <hr />
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                        <hr />
                         <Multilineas />
                     </Col>
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Geolocalización de registros por reporte</h4>
+                        <hr />
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
                         <hr />
                         <ColorMap />
                     </Col>
@@ -76,7 +97,7 @@ function InusualesSeccion2Reporte3() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{ height: '100px', overflow: 'hidden' }}>
+                    <Col style={{ height: '250px', overflow: 'hidden' }}>
                         <h4><span className="lnr lnr-chevron-right"></span> Personas reportadas en registros por geografía</h4>
                         <hr />
                         <Tabla
@@ -89,19 +110,39 @@ function InusualesSeccion2Reporte3() {
                 <Row>
                     <Col>
                         <hr />
-                        <h4><span className="lnr lnr-chevron-right"></span> Montos por moneda de acuerdo a actividad económica</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Monto por moneda de acuerdo a geografía.</h4>
+                        <hr />
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                        <hr />
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
                         <hr />
                         <Stacked />
                     </Col>
                     <Col>
                         <hr />
-                        <h4><span className="lnr lnr-chevron-right"></span> Montos por moneda de acuerdo a instrumento monetario por actividad económica</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Montos por moneda de acuerdo a instrumento monetario por geografía</h4>
                         <hr />
                         <StackedClustered />
                     </Col>
                     <Col>
                         <hr />
-                        <h4><span className="lnr lnr-chevron-right"></span> Montos por moneda de acuerdo al tipo de persona por actividad económica</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Montos por moneda de acuerdo a actividad económica por geografía</h4>
                         <hr />
                         <StackedClustered1 />
                     </Col>
@@ -110,6 +151,7 @@ function InusualesSeccion2Reporte3() {
                     <Col>
                         <hr />
                         <h4><span className="lnr lnr-chevron-right"></span> Monto por moneda de acuerdo a geografía por actividad económica</h4>
+                        <hr />
                         <Form.Group style={{ width: '100%' }}>
                             <Form.Control as="select" size="lg" custom>
                                 <option>Seleccionar periodo</option>
@@ -125,6 +167,16 @@ function InusualesSeccion2Reporte3() {
                     <Col>
                         <hr />
                         <h4><span className="lnr lnr-chevron-right"></span> Monto por moneda de acuerdo al tipo de operación por actividad económica</h4>
+                        <hr />
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
                         <hr />
                         <StackedClustered3 />
                     </Col>
