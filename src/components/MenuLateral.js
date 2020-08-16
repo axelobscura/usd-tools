@@ -25,6 +25,7 @@ function MenuLateral() {
                         <li><Link to="/seccion-dos-reporte-dos"><b>Reporte 7</b><br />Flujos de transferencias internacionales de fondos enviados a México</Link></li>
                         <li><Link to="/seccion-dos-reporte-tres"><b>Reporte 8</b><br />Transferencias internacionales de fondos de personas físicas mayores de 80 años menores de edad y personas morales con menos de tres años de constitución</Link></li>
                         <li><Link to="/seccion-dos-reporte-cuatro"><b>Reporte 9</b><br />Análisis de registros de envío en reporte de Transferencias Internacionales de Fondos (TIF) por ordenante y destinatario</Link></li>
+                        <li><Link to="/seccion-tres-reporte-seis"><b>Reporte 9.1</b><br />Coincidencia en listas negras de personas físicas y morales en reporte de transferencias internacionales de fondos TIF.</Link></li>
                     </ul>
                 </li>
                 <li>
