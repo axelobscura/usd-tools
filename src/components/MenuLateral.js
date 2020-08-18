@@ -28,6 +28,7 @@ function MenuLateral() {
                         <li><Link to="/seccion-tres-reporte-seis"><b>Reporte 9.1</b><br />Coincidencia en listas negras de personas físicas y morales en reporte de transferencias internacionales de fondos TIF.</Link></li>
                     </ul>
                 </li>
+                {/*
                 <li>
                     <h3>SECCIÓN III</h3>
                     <ul>
@@ -38,6 +39,7 @@ function MenuLateral() {
                         <li><Link to="/seccion-tres-reporte-cinco"><b>Reporte 14</b><br />Análisis de registros en Reporte de Transferencias Internacionales de Fondos (TIF)  enviadas de acuerdo a Geografía "destino"</Link></li>
                     </ul>
                 </li>
+                 */}
                 <h5 className="p-3 m-0" style={{background: '#333',color: '#fff'}}>RELEVANTES</h5>
                 <li>
                     <h3>SECCIÓN I</h3>
@@ -60,6 +62,7 @@ function MenuLateral() {
                         <li><Link to="/relevantes-seccion-dos-reporte-cinco"><b>Reporte 8</b><br />Coincidencia en  listas negras de personas físicas y morales en reporte de operaciones relevantes</Link></li>
                     </ul>
                 </li>
+                {/*
                 <li>
                     <h3>SECCIÓN III</h3>
                     <ul>
@@ -70,6 +73,7 @@ function MenuLateral() {
                         <li><Link to="/"><b>Reporte 13</b><br />Análisis de registros de Operaciones Relevantes de personas físicas menores de edad, mayores de 80 años, y personas morales con menos de 3 años de constitución</Link></li>
                     </ul>
                 </li>
+                */}
                 <h5 className="p-3 m-0" style={{background: '#333',color: '#fff'}}>INUSUALES</h5>
                 <li>
                     <h3>SECCIÓN I</h3>
@@ -94,6 +98,7 @@ function MenuLateral() {
                         <li><Link to="/inusuales-seccion-dos-reporte-seis"><b>Reporte 13</b><br />Análisis de registros en reporte de operaciones inusuales con consecutivo de cuentas y/o personas relacionadas</Link></li>
                     </ul>
                 </li>
+                {/*
                 <li>
                     <h3>SECCIÓN III</h3>
                     <ul>
@@ -104,6 +109,7 @@ function MenuLateral() {
                         <li><Link to="/"><b>Reporte 16</b><br />Analisis de Instituciones Financieras relacionadas en reporte de operaciones inusuales con consecutivos de cuenta y/o personas relacionadas </Link></li>
                     </ul>
                 </li>
+                */}
             </ul>
         </>
     );
