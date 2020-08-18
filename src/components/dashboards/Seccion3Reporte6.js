@@ -11,7 +11,7 @@ import TablaColor from './Graficas/TablaColor';
 function Seccion3Reporte6() {
     return (
         <>
-            <Titulo texto="Reporte 16: Coincidencia en listas negras de personas físicas y morales en reporte de transferencias internacionales de fondos TIF." />
+            <Titulo texto="Reporte 10: Coincidencia en listas negras de personas físicas y morales en reporte de transferencias internacionales de fondos TIF." />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -29,6 +29,15 @@ function Seccion3Reporte6() {
                 <Row>
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Frecuencia de coincidencias de personas fisicas / morales presentes en reporte de operaciones relevantes  en listas negras</h4>
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
                         <hr />
                         <Multilineas />
                     </Col>
@@ -44,7 +53,23 @@ function Seccion3Reporte6() {
                     <hr />
                     <h4><span className="lnr lnr-chevron-right"></span> Numero de personas en reporte coincidentes o no coincidentes en lista de personas bloqueadas</h4>
                         <hr />
-                        <Pay />
+                        <Row>
+                            <Col>
+                                <Pay />
+                            </Col>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                        </Row>
+                        
                     </Col>
                 </Row>
                 <Row>
@@ -58,7 +83,22 @@ function Seccion3Reporte6() {
                     <hr />
                     <h4><span className="lnr lnr-chevron-right"></span> Numero de personas en reporte coincidentes o no coincidentes  en lista de ONU</h4>
                         <hr />
-                        <Pay />
+                        <Row>
+                            <Col>
+                                <Pay />
+                            </Col>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row>
@@ -72,7 +112,22 @@ function Seccion3Reporte6() {
                     <hr />
                     <h4><span className="lnr lnr-chevron-right"></span> Número de personas en reporte coincidentes o no coincidentes en  lista OFAC</h4>
                         <hr />
-                        <Pay />
+                        <Row>
+                            <Col>
+                                <Pay />
+                            </Col>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
                 <Row>
@@ -86,7 +141,22 @@ function Seccion3Reporte6() {
                     <hr />
                     <h4><span className="lnr lnr-chevron-right"></span> Numero de personas en reporte coincidentes o no coincidentes en  lista SAT 69 A/B</h4>
                         <hr />
-                        <Pay />
+                        <Row>
+                            <Col>
+                                <Pay />
+                            </Col>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

@@ -16,8 +16,8 @@ import StackedClustered2 from './Graficas/StackedClustered2';
 import StackedClustered3 from './Graficas/StackedClustered3';
 
 function InusualesSeccion2Reporte4() {
-    const tablaHeader1 = ["Nombre del archivo", "Fecha de Análisis", "Número de Registro", "Número de palabras", "Montos detectados en las columnas", "Montos faltantes en el campo 40", "Fechas detectadas en las columnas", "Fechas faltantes en el campo 40", "Número de separadores utilizado en la columna", "Palabras con errores ortográficos", "Catalogos detectados en columnas pero faltantes en la columna 40"];
-    const tablaContenido1 = ["109.0056", "130420", "456", "1654", "$1,567", "$1,567", "31052020", "11062020", "3", "624", "Localidad"];
+    const tablaHeader1 = ["Archivo", "Periodo de la operación", "Numero del registro", "Número de cuenta", "Nombre / Denominación", "RFC", "CURP", "Fecha de nacimiento / constitución", "Nacionalidad", "Localidad", "Domicilio","Actividad Económica","Tipo de operación","Fecha de la operación","Instrumento monetario","Monto","Moneda"];
+    const tablaContenido1 = ["TIF_01", "201901", "MT-103-1", "787873882", "Pedro Sanchez Vitral", "SAVI9012233V7", "SAVI9012233V7", "201201223", "Mexicana", "Guaymas", "Juan Salvador Agraz 97, Cuajimalpa, 007678 CDMX","Agricultor","Deposito","20190304","Efectivo","$6.576.545,00","Pesos"];
     return (
         <>
             <Titulo texto="Reporte 11: Análisis de registros en reporte de operaciones inusuales por actividad económica" />
@@ -49,12 +49,24 @@ function InusualesSeccion2Reporte4() {
                     <Col>
                         <h4><span className="lnr lnr-chevron-right"></span> Registros de acuerdo al monto por moneda de mayor a menor por actividad económica en reporte</h4>
                         <hr />
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                        <hr />
                         <StackedBar />
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <hr/>
+                        <hr />
+                        <h4><span className="lnr lnr-chevron-right"></span> Personas reportadas en registros por actividad económica</h4>
+                        <hr />
                         <Form.Group style={{ width: '100%' }}>
                             <Form.Control as="select" size="lg" custom>
                                 <option>Seleccionar periodo</option>
@@ -68,7 +80,8 @@ function InusualesSeccion2Reporte4() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col style={{ height: '100px', overflow: 'hidden'}}>
+                    <Col style={{ height: '200px', overflow: 'hidden'}}>
+                        
                         <Tabla
                             tablaHeader={[...tablaHeader1]}
                             contenido={tablaContenido1}

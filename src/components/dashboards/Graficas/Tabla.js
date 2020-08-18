@@ -12,10 +12,6 @@ function Tabla(props) {
             <Container>
                 <Row>
                     <Col style={{ maxHeight: '250px', overflow: 'auto' }}>
-
-                        {
-                            console.log(Array.isArray(contenido))
-                        }
                         <Table striped bordered hover text-center>
                             <thead>
                                 <tr>

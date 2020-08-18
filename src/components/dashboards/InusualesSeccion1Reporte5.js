@@ -12,7 +12,7 @@ import Tabla from './Graficas/Tabla';
 function InusualesSeccion1Reporte5() {
     return (
         <>
-            <Titulo texto="Reporte 5 – Análisis de composición de Registros, subregistros y columnas en Reporte de Operaciones Inusuales." />
+            <Titulo texto="Reporte 5 – Análisis de composición de Registros, subregistros y columnas en Reporte de Operaciones Inusuales" />
             <Container fluid={true}>
                 <Row>
                     <Col>

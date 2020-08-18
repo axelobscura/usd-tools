@@ -79,7 +79,7 @@ function Seccion1Reporte4() {
                 </Row>
                 <Row className="mb-3">
                     <Col>
-                        <h4><span class="lnr lnr-chevron-right"></span> Número de Errores de contenido en RFC/CURP por reporte</h4>
+                        <h4><span class="lnr lnr-chevron-right"></span> Etiquetas relacionadas de la transferencia recepción</h4>
                         <hr />
                         <Tabla
                             tablaHeader={[...tablaHeader3]}
@@ -87,6 +87,15 @@ function Seccion1Reporte4() {
                         />
                     </Col>
                     <Col>
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
                         <Barras />
                     </Col>
                 </Row>
@@ -100,6 +109,15 @@ function Seccion1Reporte4() {
                         />
                     </Col>
                     <Col>
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar periodo</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
                         <Barras />
                     </Col>
                 </Row>

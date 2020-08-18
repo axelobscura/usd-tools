@@ -12,6 +12,8 @@ import TablaColor from './Graficas/TablaColor';
 import StackedClustered from './Graficas/StackedClustered';
 
 function InusualesSeccion2Reporte6() {
+    const tablaHeader1 = ["Archivo", "Periodo de la operación", "Numero del registro", "Número de cuenta", "Nombre / Denominación", "RFC", "CURP", "Fecha de nacimiento / constitución", "Nacionalidad", "Localidad", "Domicilio","Actividad Económica","Tipo de operación","Fecha de la operación","Instrumento monetario","Monto","Moneda"];
+    const tablaContenido1 = ["TIF_01", "201901", "MT-103-1", "787873882", "Pedro Sanchez Vitral", "SAVI9012233V7", "SAVI9012233V7", "201201223", "Mexicana", "Guaymas", "Juan Salvador Agraz 97, Cuajimalpa, 007678 CDMX","Agricultor","Deposito","20190304","Efectivo","$6.576.545,00","Pesos"];
     return (
         <>
             <Titulo texto="Reporte 13: Análisis de registros en reporte de operaciones inusuales con consecutivo de cuentas y/o personas relacionadas." />
@@ -59,7 +61,10 @@ function InusualesSeccion2Reporte6() {
                     <Col>
                     <hr/>
                     <h4><span className="lnr lnr-chevron-right"></span> Analisis por registros de personas relacionadas / consecutivos de cuentas de acuerdo a instituciones financieras</h4>
-                        <Tabla />
+                    <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                     <Col>
                     <h4><span className="lnr lnr-chevron-right"></span> Instituciones financieras y personas relacionadas / cuentas en subregistros de acuerdo al monto, moneda, instrumento monetario, actividad economica y tipo de operación principal</h4>
@@ -90,7 +95,10 @@ function InusualesSeccion2Reporte6() {
                             </Form.Control>
                         </Form.Group>
                         <hr />
-                        <Tabla />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                     <Col>
                     <hr />

@@ -82,11 +82,15 @@ function InusualesSeccion2Reporte3() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
-                        <hr />
+                    <Col style={{ height: '250px', overflow: 'hidden' }}>
+                    <hr />
+                        <h4><span className="lnr lnr-chevron-right"></span> Personas reportadas en registros por geografía</h4>
+                        <Row>
+                            <Col>
+                            <hr />
                         <Form.Group style={{ width: '100%' }}>
                             <Form.Control as="select" size="lg" custom>
-                                <option>Seleccionar periodo</option>
+                                <option>Seleccionar país</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
@@ -94,11 +98,35 @@ function InusualesSeccion2Reporte3() {
                             </Form.Control>
                         </Form.Group>
                         <hr />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col style={{ height: '250px', overflow: 'hidden' }}>
-                        <h4><span className="lnr lnr-chevron-right"></span> Personas reportadas en registros por geografía</h4>
+                            </Col>
+
+                            <Col>
+                            <hr />
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar Entidad Federativa</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                        <hr />
+                            </Col>
+                            <Col>
+                            <hr />
+                        <Form.Group style={{ width: '100%' }}>
+                            <Form.Control as="select" size="lg" custom>
+                                <option>Seleccionar municipios</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </Form.Control>
+                        </Form.Group>
+                        <hr />
+                            </Col>
+                        </Row>
                         <hr />
                         <Tabla
                             tablaHeader={[...tablaHeader1]}
@@ -150,33 +178,14 @@ function InusualesSeccion2Reporte3() {
                 <Row>
                     <Col>
                         <hr />
-                        <h4><span className="lnr lnr-chevron-right"></span> Monto por moneda de acuerdo a geografía por actividad económica</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Montos por moneda de acuerdo a tipo de persona por geografía</h4>
                         <hr />
-                        <Form.Group style={{ width: '100%' }}>
-                            <Form.Control as="select" size="lg" custom>
-                                <option>Seleccionar periodo</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </Form.Control>
-                        </Form.Group>
-                        <hr />
+                        
                         <StackedClustered2 />
                     </Col>
                     <Col>
                         <hr />
-                        <h4><span className="lnr lnr-chevron-right"></span> Monto por moneda de acuerdo al tipo de operación por actividad económica</h4>
-                        <hr />
-                        <Form.Group style={{ width: '100%' }}>
-                            <Form.Control as="select" size="lg" custom>
-                                <option>Seleccionar periodo</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </Form.Control>
-                        </Form.Group>
+                        <h4><span className="lnr lnr-chevron-right"></span> Montos por moneda de acuerdo al tipo de operación por geografía</h4>
                         <hr />
                         <StackedClustered3 />
                     </Col>

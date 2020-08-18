@@ -25,7 +25,7 @@ function MenuLateral() {
                         <li><Link to="/seccion-dos-reporte-dos"><b>Reporte 7</b><br />Flujos de transferencias internacionales de fondos enviados a México</Link></li>
                         <li><Link to="/seccion-dos-reporte-tres"><b>Reporte 8</b><br />Transferencias internacionales de fondos de personas físicas mayores de 80 años menores de edad y personas morales con menos de tres años de constitución</Link></li>
                         <li><Link to="/seccion-dos-reporte-cuatro"><b>Reporte 9</b><br />Análisis de registros de envío en reporte de Transferencias Internacionales de Fondos (TIF) por ordenante y destinatario</Link></li>
-                        <li><Link to="/seccion-tres-reporte-seis"><b>Reporte 9.1</b><br />Coincidencia en listas negras de personas físicas y morales en reporte de transferencias internacionales de fondos TIF.</Link></li>
+                        <li><Link to="/seccion-tres-reporte-seis"><b>Reporte 10</b><br />Coincidencia en listas negras de personas físicas y morales en reporte de transferencias internacionales de fondos TIF.</Link></li>
                     </ul>
                 </li>
                 {/*
@@ -82,7 +82,7 @@ function MenuLateral() {
                         <li><Link to="/inusuales-seccion-uno-reporte-dos"><b>Reporte 2</b><br />Errores de Estructura y de columnas relacionadas</Link></li>
                         <li><Link to="/inusuales-seccion-uno-reporte-tres"><b>Reporte 3</b><br />Errores en RFC/CURP</Link></li>
                         <li><Link to="/inusuales-seccion-uno-reporte-cuatro"><b>Reporte 4</b><br />Validacion de Registros con consecutivo de cuentas/ personas relacionadas</Link></li>
-                        <li><Link to="/inusuales-seccion-uno-reporte-cinco"><b>Reporte 5</b><br />Arbol de relacion de Registros , subregistros y columnas en Reporte de Operaciones Inusuales</Link></li>
+                        <li><Link to="/inusuales-seccion-uno-reporte-cinco"><b>Reporte 5</b><br />Análisis de composición de Registros, subregistros y columnas en Reporte de Operaciones Inusuales</Link></li>
                         <li><Link to="/inusuales-seccion-uno-reporte-seis"><b>Reporte 6</b><br />Visualizacion e Indicadores Columna 40: Descripcion de la operación</Link></li>
                         <li><Link to="/inusuales-seccion-uno-reporte-siete"><b>Reporte 7</b><br />Visualizacion e Indicadores Columna 41: Razones por las que el acto u operación se considera inusual</Link></li>
                     </ul>
