@@ -11,7 +11,7 @@ import Tabla from './Graficas/Tabla';
 import Barras from './Graficas/Barras';
 
 function InusualesSeccion1Reporte1() {
-    const tablaHeader1 = ["Fecha de validación", "Nombre del archivo", "Número de Registro", "Columna validada", "Número de errores en columna", "Tipo de error por columna"];
+    const tablaHeader1 = ["Fecha de validacion", "Nombre del archivo", "Número de Registro", "Columna validada", "Número de errores en columna", "Tipo de error por columna"];
     const tablaContenido1 = ["20190420", "109.0056", "1", "Tipo de Reporte", "2", "El campo excede lo dispuesto en el DOF"];
     return (
         <>
