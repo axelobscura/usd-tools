@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import MyResponsiveNetwork from './Graficas/Nivo/Network';
+import SunBurstTwo from './Graficas/SunBurstTwo';
 import Calendar from './Graficas/Nivo/Calendar';
 import Am from './Graficas/Am';
 import Sunburst from './Graficas/Sunburst';
@@ -31,7 +32,7 @@ function Seccion1Reporte5() {
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Composición del reporte</h4>
                         <hr />
-                        <Sunburst />
+                        <SunBurstTwo />
                     </Col>
                     <Col>
                         <h4><span class="lnr lnr-chevron-right"></span> Visualización de registro individual</h4>
