@@ -13,7 +13,7 @@ import Form from 'react-bootstrap/Form';
 function Seccion1Reporte5() {
     return (
         <>
-            <Titulo texto="Reporte 5: Visualizador de etiquetas y registros" />
+            <Titulo texto="Reporte 5: Composición de etiquetas y registros" />
             <Container fluid={true}>
                 <Row>
                     <Col>

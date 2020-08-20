@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Titulo from './Titulo/Titulo';
 import Form from 'react-bootstrap/Form';
 import MyResponsiveCalendar from './Graficas/Nivo/Calendar';
-import Sunburst from './Graficas/Sunburst';
 import SunBurstTwo from './Graficas/SunBurstTwo';
 import Saunky from './Graficas/Saunky';
 
