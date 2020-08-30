@@ -9,13 +9,16 @@ import Multilineas from './Graficas/Multilineas';
 import XYChart from './Graficas/XYChart';
 import Tabla from './Graficas/Tabla';
 import Calendar from './Graficas/Nivo/Calendar';
+import MapBubbles from './Graficas/MapBubbles';
+import Stacked from './Graficas/Stacked';
+import Barras from './Graficas/Barras';
 
 function Reporte1() {
-    const tablaHeader1 = ["Archivo", "Periodo de la operación", "Numero del registro", "Número de cuenta", "Nombre / Denominación", "RFC", "CURP", "Fecha de nacimiento / constitución", "Nacionalidad", "Localidad", "Domicilio","Actividad Económica","Tipo de operación","Fecha de la operación","Instrumento monetario","Monto","Moneda"];
-    const tablaContenido1 = ["TIF_01", "201901", "MT-103-1", "787873882", "Pedro Sanchez Vitral", "SAVI9012233V7", "SAVI9012233V7", "201201223", "Mexicana", "Guaymas", "Juan Salvador Agraz 97, Cuajimalpa, 007678 CDMX","Agricultor","Deposito","20190304","Efectivo","$6.576.545,00","Pesos"];
+    const tablaHeader1 = ["Número de registros","Error en RFC","RFC","Error en CURP","CURP","Error en fecha de nacimiento","Fecha de nacimiento"];
+    const tablaContenido1 = ["1","Si","AST120113RK5","Si","No puede existir CURP pues existe RFC","N/A","N/A"];
     return (
         <>
-            <Titulo texto="Análisis de registros en reporte de operaciones relevantes no reportados en reporte de dólares en efectivo." />
+            <Titulo texto="Clientes y usuarios con operaciones diarias y mensuales fuera de limite en Reporte de Dólares en efectivo" />
             <Container fluid={true}>
                 <Row>
                     <Col>
@@ -32,40 +35,115 @@ function Reporte1() {
                 </Row>
                 <Row>
                     <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Número de registros por día afectados por el mal uso del tipo de cambio</h4>
-                        <hr />
-                        <Pay />
+                        <Row>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                            <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                            <Col>
+                                <Form.Group style={{ width: '100%' }}>
+                                    <Form.Control as="select" size="lg" custom>
+                                        <option>Seleccionar periodo</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                        </Row>
+                        <MapBubbles />
                     </Col>
                     <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Tendencia de registros de operaciones relevantes en dolares que no estan presentes en el reporte de dolares en efectivo</h4>
+                        <h4><span className="lnr lnr-chevron-right"></span> Monto de operaciones en dólares en efectivo fuera del límite por clientes personas físicas/usuarios de acuerdo a sucursal</h4>
+                        <hr />
+                        <Stacked />
+                    </Col>
+                    <Col>
+                        <h4><span className="lnr lnr-chevron-right"></span> Tendencia de registros con operaciones en dólares en efectivo fuera de límite por geografía/sucursal</h4>
                         <hr />
                         <Multilineas />
                     </Col>
-                    <Col>
-                        <h4><span className="lnr lnr-chevron-right"></span> Montos por registro de Operaciones relevantes en dolares no reportadas en el reporte de dolares en efectivo</h4>
-                        <hr />
-                        <XYChart />
-                    </Col>
                 </Row>
-                <Row>
+                <Row className="mt-3">
+                    <Col xs="4">
+                        <h4><span className="lnr lnr-chevron-right"></span> Usuarios que exceden limite diario</h4>
+                        <hr />
+                        <Barras />
+                    </Col>
                     <Col>
-                    <hr/>
-                    <h4><span className="lnr lnr-chevron-right"></span> Registros en reporte de operaciones relevantes no reportados en reporte de dólares en efectivo</h4>
-                    <hr/>
-                    <Tabla
-                        tablaHeader={[...tablaHeader1]}
-                        contenido={tablaContenido1}
-                    />
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                 </Row>
                 <Row className="mt-3">
+                    <Col xs="4">
+                        <h4><span className="lnr lnr-chevron-right"></span> Usuarios que exceden limite mensual</h4>
+                        <hr />
+                        <Barras />
+                    </Col>
                     <Col>
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
+                    </Col>
+                </Row>
+                <Row className="mt-3">
+                    <Col xs="4">
+                        <h4><span className="lnr lnr-chevron-right"></span> Clientes personas físicas que exceden límite diario</h4>
                         <hr />
-                        <h4><span class="lnr lnr-chevron-right"></span> Numero de Registros de Operaciones relevantes en dolares no reportados en el reporte de operaciones relevantes por dia</h4>
+                        <Barras />
+                    </Col>
+                    <Col>
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
+                    </Col>
+                </Row>
+                <Row className="mt-3">
+                    <Col xs="4">
+                        <h4><span className="lnr lnr-chevron-right"></span> Clientes personas físicas que exceden límite mensual</h4>
                         <hr />
-                        <div style={{height: '350px'}}>
-                            <Calendar />
-                        </div>
+                        <Barras />
+                    </Col>
+                    <Col>
+                        <Tabla
+                            tablaHeader={[...tablaHeader1]}
+                            contenido={tablaContenido1}
+                        />
                     </Col>
                 </Row>
             </Container>

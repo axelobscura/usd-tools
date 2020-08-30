@@ -13,7 +13,7 @@ import Calendar from './Graficas/Nivo/Calendar';
 function Reporte2() {
     const tablaHeader1 = ["Archivos", "Fecha", "Tipos de cambio utilizados por la institución financiera", "Tipo de cambio DOF (día habil inmediato anterior a la fecha de operación)"];
     const tablaContenido1 = ["Rel01T1", "20190101", "19.28", "19.28"];
-    const tablaHeader2 = ["Fecha", "Fecha del registro", "Monto en pesos reportado en el reporte", "Montos en dólares utilizando tipo de cambio usado por la institución financiera", "Monto en dólares utilizando tipo de cambio DOF"];
+    const tablaHeader2 = ["Fecha", "Fecha del registro", "Monto en pesos reportado en el reporte", "Monto en dólares utilizando tipo de cambio usado por la Institución Financiera", "Monto en dólares utilizando tipo de cambio DOF (día habil inmediato anterior a la fecha de la operación)"];
     const tablaContenido2 = ["20190101", "2", "$ 170,980.00", "USD $7500", "USD $7500"];
     return (
         <>
